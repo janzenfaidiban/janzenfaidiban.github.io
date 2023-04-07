@@ -1,9 +1,17 @@
 var janzensProject = [
     {
         'year':'2023', 
+        'title':'RotBar KOMPAK', 
+        'cover_image':'./covers/projects/rotbarkompak.png', 
+        'desc':'Rot-Bar KOMPAK is a small business in Jayapura, Papua. With the team of passionate young papuan who always happy learn and grow. This is one of my favorite project, because I was able to be part of their new achievement in making a website. ',
+        'site_url':'https://rotbarkompak.com',
+        'status':'Launced',
+    },
+    {
+        'year':'2023', 
         'title':'Website SAGU Foundation', 
         'cover_image':'./covers/projects/sagufoundation.png', 
-        'desc':'Sebuah Lembaga Pengembangan Sumberdaya Manusia Yang Berkantor di Jayapura, Papua, Indonesia.',
+        'desc':'SAGU Foundation is a nonprofit organization in Jayapura, Papua, Indonesia.This is one of the opportunity for me to learn new technologies and skills in Information Technologies, such as CMS Wordpress and LMS Moodle Development.',
         'site_url':'https://sagufoundation.org',
         'status':'On Progress',
     },
@@ -11,18 +19,18 @@ var janzensProject = [
         'year':'2023', 
         'title':'Website DLHK Kota Jayapura', 
         'cover_image':'./covers/projects/dlhk-kota-jayapura.png', 
-        'desc':'Website Resmi Dinas Lingkungan Hidup & Kebersihan Kota Jayapura',
+        'desc':'Badan Lingkungan Hidup Kota Jayapura, also known as the Environmental Agency of Jayapura City, is a government body responsible for overseeing and managing environmental conservation and sustainability initiatives in Jayapura, a city located in Papua, Indonesia. ',
         'site_url':'https://nokensoft.com',
         'status':'On Progress',
     },
-    {
-        'year':'2021', 
-        'title':'Website Highland Roastery', 
-        'cover_image':'./covers/projects/hr.png', 
-        'desc':'Tempat usaha roasting kopi Papua dan jasa pelatihan barista yang berlokasi di Kota Jayapura, Papua.',
-        'site_url':'https://highlandroastery.com',
-        'status':'On Progress',
-    },
+    // {
+    //     'year':'2021', 
+    //     'title':'Website Highland Roastery', 
+    //     'cover_image':'./covers/projects/hr.png', 
+    //     'desc':'Tempat usaha roasting kopi Papua dan jasa pelatihan barista yang berlokasi di Kota Jayapura, Papua.',
+    //     'site_url':'https://highlandroastery.com',
+    //     'status':'On Progress',
+    // },
 ]
 
 buildTable(janzensProject)
