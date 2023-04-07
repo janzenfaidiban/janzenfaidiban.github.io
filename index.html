@@ -9,9 +9,39 @@
 
     <script src="https://cdn.tailwindcss.com"></script>
 
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.6.4/flowbite.min.css" rel="stylesheet" />
+
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <script>
+        // On page load or when changing themes, best to add inline in `head` to avoid FOUC
+        if (localStorage.getItem('color-theme') === 'dark' || (!('color-theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
+            document.documentElement.classList.add('dark');
+        } else {
+            document.documentElement.classList.remove('dark')
+        }
+    </script>
+
 </head>
 
-<body>
+<body class="dark:bg-gray-900">
+
+    <button id="theme-toggle" type="button"
+        class="text-gray-500 dark:text-gray-400 hover:bg-gray-100 dark:hover:bg-gray-700 focus:outline-none focus:ring-4 focus:ring-gray-200 dark:focus:ring-gray-700 rounded-lg text-sm p-2.5">
+        <svg id="theme-toggle-dark-icon" class="hidden w-5 h-5" fill="currentColor" viewBox="0 0 20 20"
+            xmlns="http://www.w3.org/2000/svg">
+            <path d="M17.293 13.293A8 8 0 016.707 2.707a8.001 8.001 0 1010.586 10.586z"></path>
+        </svg>
+        <svg id="theme-toggle-light-icon" class="hidden w-5 h-5" fill="currentColor" viewBox="0 0 20 20"
+            xmlns="http://www.w3.org/2000/svg">
+            <path
+                d="M10 2a1 1 0 011 1v1a1 1 0 11-2 0V3a1 1 0 011-1zm4 8a4 4 0 11-8 0 4 4 0 018 0zm-.464 4.95l.707.707a1 1 0 001.414-1.414l-.707-.707a1 1 0 00-1.414 1.414zm2.12-10.607a1 1 0 010 1.414l-.706.707a1 1 0 11-1.414-1.414l.707-.707a1 1 0 011.414 0zM17 11a1 1 0 100-2h-1a1 1 0 100 2h1zm-7 4a1 1 0 011 1v1a1 1 0 11-2 0v-1a1 1 0 011-1zM5.05 6.464A1 1 0 106.465 5.05l-.708-.707a1 1 0 00-1.414 1.414l.707.707zm1.414 8.486l-.707.707a1 1 0 01-1.414-1.414l.707-.707a1 1 0 011.414 1.414zM4 11a1 1 0 100-2H3a1 1 0 000 2h1z"
+                fill-rule="evenodd" clip-rule="evenodd"></path>
+        </svg>
+    </button>
 
     <!-- Hero -->
     <div
@@ -34,158 +64,302 @@
             <!-- End Title -->
 
             <div class="mt-5 max-w-3xl text-center mx-auto">
-                <p class="text-lg text-gray-600 dark:text-gray-400">Preline UI is an open-source set of prebuilt UI
-                    components, ready-to-use examples and Figma design system based on the utility-first Tailwind CSS
-                    framework.</p>
+                <p class="text-lg text-gray-600 dark:text-gray-400">Welcome to my project portfolio sites. I'm a web
+                    developer at <a href="https://nokensoft.com" target="_blank"
+                        class="text-blue-600 font-bold">Nokensoft</a>. I use this site as a show case of my projects and
+                    portfolio in Information Technology Development.</p>
             </div>
 
             <!-- Buttons -->
             <div class="mt-8 grid gap-3 w-full sm:inline-flex sm:justify-center">
                 <a class="inline-flex justify-center items-center gap-x-3 text-center bg-gradient-to-tl from-blue-600 to-violet-600 hover:from-violet-600 hover:to-blue-600 border border-transparent text-white text-sm font-medium rounded-md focus:outline-none focus:ring-2 focus:ring-blue-600 focus:ring-offset-2 focus:ring-offset-white py-3 px-4 dark:focus:ring-offset-gray-800"
-                    href="#">
-                    Get started
-                    <svg class="w-3 h-3" width="16" height="16" viewBox="0 0 16 16" fill="none">
-                        <path d="M5.27921 2L10.9257 7.64645C11.1209 7.84171 11.1209 8.15829 10.9257 8.35355L5.27921 14"
-                            stroke="currentColor" stroke-width="2" stroke-linecap="round" />
-                    </svg>
+                    href="https://github.com/janzenfaidiban" target="_blank"> <i class="fa-brands fa-github"></i>
                 </a>
-                <a class="relative group inline-flex justify-center items-center gap-x-3.5 text-center bg-white border hover:border-gray-300 shadow-sm font-mono text-sm font-medium rounded-md focus:outline-none focus:ring-2 focus:ring-gray-400 focus:ring-offset-2 focus:ring-offset-white transition p-2 pl-4 dark:bg-slate-900 dark:border-gray-800 dark:hover:border-gray-600 dark:shadow-slate-700/[.7] dark:text-white dark:focus:ring-gray-700 dark:focus:ring-offset-gray-800"
-                    href="javascript:;">
-                    $ npm i preline
-                    <span
-                        class="flex justify-center items-center bg-gray-200 rounded-md w-7 h-7 dark:bg-gray-700 dark:text-gray-400">
-                        <svg class="w-3.5 h-3.5 group-hover:rotate-6 transition" width="16" height="16"
-                            fill="currentColor" viewBox="0 0 16 16">
-                            <path
-                                d="M4 1.5H3a2 2 0 0 0-2 2V14a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V3.5a2 2 0 0 0-2-2h-1v1h1a1 1 0 0 1 1 1V14a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V3.5a1 1 0 0 1 1-1h1v-1z" />
-                            <path
-                                d="M9.5 1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-3a.5.5 0 0 1-.5-.5v-1a.5.5 0 0 1 .5-.5h3zm-3-1A1.5 1.5 0 0 0 5 1.5v1A1.5 1.5 0 0 0 6.5 4h3A1.5 1.5 0 0 0 11 2.5v-1A1.5 1.5 0 0 0 9.5 0h-3z" />
-                        </svg>
-                    </span>
+                <a class="inline-flex justify-center items-center gap-x-3 text-center bg-gradient-to-tl from-blue-600 to-violet-600 hover:from-violet-600 hover:to-blue-600 border border-transparent text-white text-sm font-medium rounded-md focus:outline-none focus:ring-2 focus:ring-blue-600 focus:ring-offset-2 focus:ring-offset-white py-3 px-4 dark:focus:ring-offset-gray-800"
+                    href="https://linkedin.com/in/janzen-faidiban-48ba28169/" target="_blank"> <i
+                        class="fa-brands fa-linkedin"></i>
+                </a>
+                <a class="inline-flex justify-center items-center gap-x-3 text-center bg-gradient-to-tl from-blue-600 to-violet-600 hover:from-violet-600 hover:to-blue-600 border border-transparent text-white text-sm font-medium rounded-md focus:outline-none focus:ring-2 focus:ring-blue-600 focus:ring-offset-2 focus:ring-offset-white py-3 px-4 dark:focus:ring-offset-gray-800"
+                    href="https://instagram.com/janzen.faidiban" target="_blank"> <i class="fa-brands fa-instagram"></i>
+                </a>
+                <a class="relative group inline-flex justify-center items-center gap-x-3.5 text-center bg-white border hover:border-gray-300 shadow-sm font-mono text-sm font-medium rounded-md focus:outline-none focus:ring-2 focus:ring-gray-400 focus:ring-offset-2 focus:ring-offset-white transition p-2 pl-4 dark:bg-slate-900 dark:border-gray-800 dark:hover:border-gray-600 dark:shadow-slate-700/[.7] dark:text-dark-500 dark:focus:ring-gray-700 dark:focus:ring-offset-gray-800"
+                    href="https://nokensoft.com" target="_blank"> www.nokensoft.com
+
                 </a>
             </div>
             <!-- End Buttons -->
 
-            <div class="mt-5 flex justify-center items-center gap-x-1 sm:gap-x-3">
-                <span class="text-sm text-gray-600 dark:text-gray-400">Package Manager:</span>
-                <span class="text-sm font-bold text-gray-900 dark:text-white">npm</span>
-                <svg class="h-5 w-5 text-gray-300 dark:text-gray-600" width="16" height="16" viewBox="0 0 16 16"
-                    fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
-                    <path d="M6 13L10 3" stroke="currentColor" stroke-linecap="round" />
-                </svg>
-                <a class="inline-flex items-center gap-x-1.5 text-sm text-blue-600 decoration-2 hover:underline font-medium"
-                    href="#">
-                    Installation Guide
-                    <svg class="w-2.5 h-2.5" width="16" height="16" viewBox="0 0 16 16" fill="none">
-                        <path d="M5.27921 2L10.9257 7.64645C11.1209 7.84171 11.1209 8.15829 10.9257 8.35355L5.27921 14"
-                            stroke="currentColor" stroke-width="2" stroke-linecap="round" />
-                    </svg>
-                </a>
-            </div>
         </div>
     </div>
     <!-- End Hero -->
 
-
     <!-- Card Blog -->
     <div class="max-w-[85rem] px-4 py-10 sm:px-6 lg:px-8 lg:py-14 mx-auto">
         <!-- Grid -->
-        <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
-            <!-- Card -->
-            <div
-                class="group flex flex-col h-full bg-white border border-gray-200 shadow-sm rounded-xl dark:bg-slate-900 dark:border-gray-700 dark:shadow-slate-700/[.7]">
-                <div class="flex flex-col justify-center items-center bg-blue-600 rounded-t-xl">
-                    <img src="projects/website-dlhk-kota-jayapura.jpeg" alt="">
-                </div>
-                <div class="p-4 md:p-6">
-                    <span class="block mb-1 text-xs font-semibold uppercase text-blue-600 dark:text-blue-500">
-                        Web Development
-                    </span>
-                    <h3 class="text-xl font-semibold text-gray-800 dark:text-gray-300 dark:hover:text-white">
-                        Website DLHK Kota Jayapura
-                    </h3>
-                    <p class="mt-3 text-gray-500">
-                        Designing and maintaining this website. I am the IT Consultant with the Jayapura City Governement. I do this project with Nokensoft (PT Noken Inovasi Teknologi Informasi).
-                    </p>
-                </div>
-                <div
-                    class="mt-auto flex border-t border-gray-200 divide-x divide-gray-200 dark:border-gray-700 dark:divide-gray-700">
-                    <a class="w-full py-3 px-4 inline-flex justify-center items-center gap-2 rounded-bl-xl font-medium bg-white text-gray-700 shadow-sm align-middle hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-white focus:ring-blue-600 transition-all text-sm sm:p-4 dark:bg-slate-900 dark:hover:bg-slate-800 dark:border-gray-700 dark:text-gray-400 dark:hover:text-white dark:focus:ring-offset-gray-800"
-                        href="#">
-                        Visit Site
-                    </a>
-                    <a class="w-full py-3 px-4 inline-flex justify-center items-center gap-2 rounded-br-xl font-medium bg-white text-gray-700 shadow-sm align-middle hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-white focus:ring-blue-600 transition-all text-sm sm:p-4 dark:bg-slate-900 dark:hover:bg-slate-800 dark:border-gray-700 dark:text-gray-400 dark:hover:text-white dark:focus:ring-offset-gray-800"
-                        href="#">
-                        Read More
-                    </a>
-                </div>
-            </div>
-            <!-- End Card -->
-            <!-- Card -->
-            <div
-            class="group flex flex-col h-full bg-white border border-gray-200 shadow-sm rounded-xl dark:bg-slate-900 dark:border-gray-700 dark:shadow-slate-700/[.7]">
-            <div class="flex flex-col justify-center items-center bg-blue-600 rounded-t-xl">
-                <img src="projects/website-dlhk-kota-jayapura.jpeg" alt="">
-            </div>
-            <div class="p-4 md:p-6">
-                <span class="block mb-1 text-xs font-semibold uppercase text-blue-600 dark:text-blue-500">
-                    Web Development
-                </span>
-                <h3 class="text-xl font-semibold text-gray-800 dark:text-gray-300 dark:hover:text-white">
-                    Website DLHK Kota Jayapura
-                </h3>
-                <p class="mt-3 text-gray-500">
-                    Designing and maintaining this website. I am the IT Consultant with the Jayapura City Governement. I do this project with Nokensoft (PT Noken Inovasi Teknologi Informasi).
-                </p>
-            </div>
-            <div
-                class="mt-auto flex border-t border-gray-200 divide-x divide-gray-200 dark:border-gray-700 dark:divide-gray-700">
-                <a class="w-full py-3 px-4 inline-flex justify-center items-center gap-2 rounded-bl-xl font-medium bg-white text-gray-700 shadow-sm align-middle hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-white focus:ring-blue-600 transition-all text-sm sm:p-4 dark:bg-slate-900 dark:hover:bg-slate-800 dark:border-gray-700 dark:text-gray-400 dark:hover:text-white dark:focus:ring-offset-gray-800"
-                    href="#">
-                    Visit Site
-                </a>
-                <a class="w-full py-3 px-4 inline-flex justify-center items-center gap-2 rounded-br-xl font-medium bg-white text-gray-700 shadow-sm align-middle hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-white focus:ring-blue-600 transition-all text-sm sm:p-4 dark:bg-slate-900 dark:hover:bg-slate-800 dark:border-gray-700 dark:text-gray-400 dark:hover:text-white dark:focus:ring-offset-gray-800"
-                    href="#">
-                    Read More
-                </a>
-            </div>
-        </div>
-        <!-- End Card -->
-            <!-- Card -->
-            <div
-            class="group flex flex-col h-full bg-white border border-gray-200 shadow-sm rounded-xl dark:bg-slate-900 dark:border-gray-700 dark:shadow-slate-700/[.7]">
-            <div class="flex flex-col justify-center items-center bg-blue-600 rounded-t-xl">
-                <img src="projects/website-dlhk-kota-jayapura.jpeg" alt="">
-            </div>
-            <div class="p-4 md:p-6">
-                <span class="block mb-1 text-xs font-semibold uppercase text-blue-600 dark:text-blue-500">
-                    Web Development
-                </span>
-                <h3 class="text-xl font-semibold text-gray-800 dark:text-gray-300 dark:hover:text-white">
-                    Website DLHK Kota Jayapura
-                </h3>
-                <p class="mt-3 text-gray-500">
-                    Designing and maintaining this website. I am the IT Consultant with the Jayapura City Governement. I do this project with Nokensoft (PT Noken Inovasi Teknologi Informasi).
-                </p>
-            </div>
-            <div
-                class="mt-auto flex border-t border-gray-200 divide-x divide-gray-200 dark:border-gray-700 dark:divide-gray-700">
-                <a class="w-full py-3 px-4 inline-flex justify-center items-center gap-2 rounded-bl-xl font-medium bg-white text-gray-700 shadow-sm align-middle hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-white focus:ring-blue-600 transition-all text-sm sm:p-4 dark:bg-slate-900 dark:hover:bg-slate-800 dark:border-gray-700 dark:text-gray-400 dark:hover:text-white dark:focus:ring-offset-gray-800"
-                    href="#">
-                    Visit Site
-                </a>
-                <a class="w-full py-3 px-4 inline-flex justify-center items-center gap-2 rounded-br-xl font-medium bg-white text-gray-700 shadow-sm align-middle hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-white focus:ring-blue-600 transition-all text-sm sm:p-4 dark:bg-slate-900 dark:hover:bg-slate-800 dark:border-gray-700 dark:text-gray-400 dark:hover:text-white dark:focus:ring-offset-gray-800"
-                    href="#">
-                    Read More
-                </a>
-            </div>
-        </div>
-        <!-- End Card -->
-
+        <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-6" id="myProjects">
         </div>
         <!-- End Grid -->
     </div>
     <!-- End Card Blog -->
+
+
+
+    <!-- Card Section -->
+    <div class="max-w-[85rem] px-4 py-10 sm:px-6 lg:px-8 lg:py-14 mx-auto">
+
+
+        <div class="mb-9">
+            <h1
+                class="mb-4 text-4xl font-extrabold leading-none tracking-tight text-gray-900 md:text-5xl lg:text-6xl dark:text-white">
+                Some of <span class="text-blue-600 dark:text-blue-500">project categories</span> have been working with.</h1>
+            <p class="text-lg font-normal text-gray-500 lg:text-xl dark:text-gray-400">I love to be part of the process. Hands on things that can bring people or organization achieve their best perfomnance. Always be grateful when have the opportunity to learn and build networks with anyone in the projects.</p>
+        </div>
+
+
+        <!-- Grid -->
+        <div class="grid sm:grid-cols-2 md:grid-cols-3 xl:grid-cols-4 gap-4 sm:gap-6">
+            <!-- Card -->
+            <a class="group flex flex-col bg-white border shadow-sm rounded-xl hover:shadow-md transition dark:bg-slate-900 dark:border-gray-800"
+                href="#">
+                <div class="p-4 md:p-5">
+                    <div class="flex justify-between items-center">
+                        <div>
+                            <h3
+                                class="group-hover:text-blue-600 font-semibold text-gray-800 dark:group-hover:text-gray-400 dark:text-blue-800">
+                                CMS Wordpress
+                            </h3>
+                            <p class="text-sm text-gray-500">
+                                2 projets
+                            </p>
+                        </div>
+                        <div class="pl-3">
+                            <svg class="w-3.5 h-3.5 text-gray-500" width="16" height="16" viewBox="0 0 16 16"
+                                fill="none">
+                                <path
+                                    d="M5.27921 2L10.9257 7.64645C11.1209 7.84171 11.1209 8.15829 10.9257 8.35355L5.27921 14"
+                                    stroke="currentColor" stroke-width="2" stroke-linecap="round" />
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+            </a>
+            <!-- End Card -->
+
+            <!-- Card -->
+            <a class="group flex flex-col bg-white border shadow-sm rounded-xl hover:shadow-md transition dark:bg-slate-900 dark:border-gray-800"
+                href="#">
+                <div class="p-4 md:p-5">
+                    <div class="flex justify-between items-center">
+                        <div>
+                            <h3
+                                class="group-hover:text-blue-600 font-semibold text-gray-800 dark:group-hover:text-gray-400 dark:text-blue-800">
+                                LMS Moodle
+                            </h3>
+                            <p class="text-sm text-gray-500">
+                                1 project
+                            </p>
+                        </div>
+                        <div class="pl-3">
+                            <svg class="w-3.5 h-3.5 text-gray-500" width="16" height="16" viewBox="0 0 16 16"
+                                fill="none">
+                                <path
+                                    d="M5.27921 2L10.9257 7.64645C11.1209 7.84171 11.1209 8.15829 10.9257 8.35355L5.27921 14"
+                                    stroke="currentColor" stroke-width="2" stroke-linecap="round" />
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+            </a>
+            <!-- End Card -->
+
+            <!-- Card -->
+            <a class="group flex flex-col bg-white border shadow-sm rounded-xl hover:shadow-md transition dark:bg-slate-900 dark:border-gray-800"
+                href="#">
+                <div class="p-4 md:p-5">
+                    <div class="flex justify-between items-center">
+                        <div>
+                            <h3
+                                class="group-hover:text-blue-600 font-semibold text-gray-800 dark:group-hover:text-gray-400 dark:text-blue-800">
+                                Small Business
+                            </h3>
+                            <p class="text-sm text-gray-500">
+                                3 projects
+                            </p>
+                        </div>
+                        <div class="pl-3">
+                            <svg class="w-3.5 h-3.5 text-gray-500" width="16" height="16" viewBox="0 0 16 16"
+                                fill="none">
+                                <path
+                                    d="M5.27921 2L10.9257 7.64645C11.1209 7.84171 11.1209 8.15829 10.9257 8.35355L5.27921 14"
+                                    stroke="currentColor" stroke-width="2" stroke-linecap="round" />
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+            </a>
+            <!-- End Card -->
+
+            <!-- Card -->
+            <a class="group flex flex-col bg-white border shadow-sm rounded-xl hover:shadow-md transition dark:bg-slate-900 dark:border-gray-800"
+                href="#">
+                <div class="p-4 md:p-5">
+                    <div class="flex justify-between items-center">
+                        <div>
+                            <h3
+                                class="group-hover:text-blue-600 font-semibold text-gray-800 dark:group-hover:text-gray-400 dark:text-blue-800">
+                                Blog & Podcast
+                            </h3>
+                            <p class="text-sm text-gray-500">
+                                2 projects
+                            </p>
+                        </div>
+                        <div class="pl-3">
+                            <svg class="w-3.5 h-3.5 text-gray-500" width="16" height="16" viewBox="0 0 16 16"
+                                fill="none">
+                                <path
+                                    d="M5.27921 2L10.9257 7.64645C11.1209 7.84171 11.1209 8.15829 10.9257 8.35355L5.27921 14"
+                                    stroke="currentColor" stroke-width="2" stroke-linecap="round" />
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+            </a>
+            <!-- End Card -->
+
+            <!-- Card -->
+            <a class="group flex flex-col bg-white border shadow-sm rounded-xl hover:shadow-md transition dark:bg-slate-900 dark:border-gray-800"
+                href="#">
+                <div class="p-4 md:p-5">
+                    <div class="flex justify-between items-center">
+                        <div>
+                            <h3
+                                class="group-hover:text-blue-600 font-semibold text-gray-800 dark:group-hover:text-gray-400 dark:text-blue-800">
+                                Education
+                            </h3>
+                            <p class="text-sm text-gray-500">
+                                3 projects
+                            </p>
+                        </div>
+                        <div class="pl-3">
+                            <svg class="w-3.5 h-3.5 text-gray-500" width="16" height="16" viewBox="0 0 16 16"
+                                fill="none">
+                                <path
+                                    d="M5.27921 2L10.9257 7.64645C11.1209 7.84171 11.1209 8.15829 10.9257 8.35355L5.27921 14"
+                                    stroke="currentColor" stroke-width="2" stroke-linecap="round" />
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+            </a>
+            <!-- End Card -->
+
+            <!-- Card -->
+            <a class="group flex flex-col bg-white border shadow-sm rounded-xl hover:shadow-md transition dark:bg-slate-900 dark:border-gray-800"
+                href="#">
+                <div class="p-4 md:p-5">
+                    <div class="flex justify-between items-center">
+                        <div>
+                            <h3
+                                class="group-hover:text-blue-600 font-semibold text-gray-800 dark:group-hover:text-gray-400 dark:text-blue-800">
+                                Information System
+                            </h3>
+                            <p class="text-sm text-gray-500">
+                                2 projects
+                            </p>
+                        </div>
+                        <div class="pl-3">
+                            <svg class="w-3.5 h-3.5 text-gray-500" width="16" height="16" viewBox="0 0 16 16"
+                                fill="none">
+                                <path
+                                    d="M5.27921 2L10.9257 7.64645C11.1209 7.84171 11.1209 8.15829 10.9257 8.35355L5.27921 14"
+                                    stroke="currentColor" stroke-width="2" stroke-linecap="round" />
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+            </a>
+            <!-- End Card -->
+
+            <!-- Card -->
+            <a class="group flex flex-col bg-white border shadow-sm rounded-xl hover:shadow-md transition dark:bg-slate-900 dark:border-gray-800"
+                href="#">
+                <div class="p-4 md:p-5">
+                    <div class="flex justify-between items-center">
+                        <div>
+                            <h3
+                                class="group-hover:text-blue-600 font-semibold text-gray-800 dark:group-hover:text-gray-400 dark:text-blue-800">
+                                Non-Profit Organisation
+                            </h3>
+                            <p class="text-sm text-gray-500">
+                                2 projects
+                            </p>
+                        </div>
+                        <div class="pl-3">
+                            <svg class="w-3.5 h-3.5 text-gray-500" width="16" height="16" viewBox="0 0 16 16"
+                                fill="none">
+                                <path
+                                    d="M5.27921 2L10.9257 7.64645C11.1209 7.84171 11.1209 8.15829 10.9257 8.35355L5.27921 14"
+                                    stroke="currentColor" stroke-width="2" stroke-linecap="round" />
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+            </a>
+            <!-- End Card -->
+        </div>
+        <!-- End Grid -->
+    </div>
+    <!-- End Card Section -->
+
+
+
+    <script src="./project.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.6.4/flowbite.min.js"></script>
+
+
+    <script>
+        var themeToggleDarkIcon = document.getElementById('theme-toggle-dark-icon');
+        var themeToggleLightIcon = document.getElementById('theme-toggle-light-icon');
+
+        // Change the icons inside the button based on previous settings
+        if (localStorage.getItem('color-theme') === 'dark' || (!('color-theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
+            themeToggleLightIcon.classList.remove('hidden');
+        } else {
+            themeToggleDarkIcon.classList.remove('hidden');
+        }
+
+        var themeToggleBtn = document.getElementById('theme-toggle');
+
+        themeToggleBtn.addEventListener('click', function () {
+
+            // toggle icons inside button
+            themeToggleDarkIcon.classList.toggle('hidden');
+            themeToggleLightIcon.classList.toggle('hidden');
+
+            // if set via local storage previously
+            if (localStorage.getItem('color-theme')) {
+                if (localStorage.getItem('color-theme') === 'light') {
+                    document.documentElement.classList.add('dark');
+                    localStorage.setItem('color-theme', 'dark');
+                } else {
+                    document.documentElement.classList.remove('dark');
+                    localStorage.setItem('color-theme', 'light');
+                }
+
+                // if NOT set via local storage previously
+            } else {
+                if (document.documentElement.classList.contains('dark')) {
+                    document.documentElement.classList.remove('dark');
+                    localStorage.setItem('color-theme', 'light');
+                } else {
+                    document.documentElement.classList.add('dark');
+                    localStorage.setItem('color-theme', 'dark');
+                }
+            }
+
+        });
+    </script>
 
 </body>
 
