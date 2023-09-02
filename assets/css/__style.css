@@ -40,11 +40,11 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500;600;700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap");
 :root {
-  --color-primary: #0162ff;
+  --color-primary: #290dfd;
   --color-secondary: #f4f5f6;
   --color-tertiary: #0d1013;
   --color-gray: #f6f6f6;
-  --color-subtitle: #fbda00;
+  --color-subtitle: #b5ac03;
   --background-color-1: linear-gradient(145deg, #1e2024, #23272b);
   --background-color-2: #212428;
   --shadow-1: 10px 10px 19px #1c1e22,
@@ -53,7 +53,7 @@
   --inner-shadow: 1px 4px 2px -3px rgba(0, 0, 0, 0.7) inset, -1px -3px 3px -2px rgba(255, 255, 255, 0.2) inset;
   --shadow-white-3: 5px 5px 15px #D1D9E6, -5px -5px 15px #ffffff;
   --gradient-box-w: linear-gradient(145deg, #e2e8ec, #ffffff);
-  --gradient-red-hover: linear-gradient(145deg, #0162ff, #d11414);
+  --gradient-red-hover: linear-gradient(145deg, #0947f2, #d11414);
   --color-heading: #ffffff;
   --color-heading-wv: #1e2125;
   --color-body: #878e99;
@@ -12553,7 +12553,7 @@ figcaption {
 }
 
 .section-title span.subtitle {
-  color: #0162ff;
+  color: #0947f2;
   text-transform: uppercase;
   letter-spacing: 5px;
   font-size: 14px;
@@ -12720,7 +12720,7 @@ figcaption {
   }
 }
 .slide .content .inner .title span {
-  color: #0162ff;
+  color: #0947f2;
 }
 .slide .content .inner .title .header-caption span {
   color: var(--color-white);
@@ -13345,7 +13345,7 @@ figcaption {
   }
 }
 .banner-details-wrapper-sticky .banner-title-area .title span {
-  color: #0162ff;
+  color: #0947f2;
 }
 @media only screen and (max-width: 575px) {
   .banner-details-wrapper-sticky .banner-title-area .title span {
@@ -14407,7 +14407,7 @@ div#featured-project-carousel {
   }
 }
 .rn-nav-list .nav-item .nav-link:hover, .rn-nav-list .nav-item .nav-link.active {
-  color: #0162ff;
+  color: #0947f2;
   background-color: transparent;
   border-color: transparent;
   border: 0 none;
@@ -14837,8 +14837,8 @@ div#featured-project-carousel {
   overflow: visible;
   position: relative;
   border-radius: 14px;
-  background: #29a7f0;
-  background: linear-gradient(145deg, #0155c3 0%, #b4c801 100%);
+  background: #29bef0;
+  background: linear-gradient(145deg, #2933f0 0%, #7501c8 100%);
 }
 .progress-charts .progress .progress-bar span.percent-label {
   position: absolute;
