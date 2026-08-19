@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Keindahan Danau Sentani - Surga Alam Papua</title>
+    
+    <!-- Google Fonts: Plus Jakarta Sans -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400;700&display=swap" rel="stylesheet">
+    
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        jakarta: ['"Plus Jakarta Sans"', 'sans-serif'],
+                    },
+                    colors: {
+                        brandBlue: '#0066FF',
+                        brandOrange: '#FF6B00',
+                    }
+                }
+            }
+        }
+    </script>
+    
+    <style>
+        body {
+            font-family: 'Plus Jakarta Sans', sans-serif;
+        }
+        
+    </style>
+</head>
+<body class="bg-gray-900 text-white font-jakarta antialiased selection:bg-brandBlue selection:text-white">
+
+    <!-- Hero Section -->
+    <div class="relative min-h-screen bg-cover bg-center flex flex-col justify-between overflow-hidden" 
+         style="background-image: url('./hero4.jpeg');">
+        
+        <!-- Overlay Gradasi Atas (gelap) -->
+        <!-- <div class="absolute inset-0 bg-gradient-to-b from-black/60 via-black/30 to-transparent"></div> -->
+        
+        <!-- Gradasi Putih ke Bawah Hero -->
+        <div class="absolute inset-x-0 bottom-0 h-2/5 bg-gradient-to-t from-white via-white/80 to-transparent"></div>
+
+        <!-- Header / Navbar -->
+        <header class="relative z-10">
+            <div class="container mx-auto px-6 py-6 flex items-center justify-between">
+                <!-- Logo -->
+                <div class="text-xl font-semibold tracking-wider flex items-center gap-1">
+                    <span class="text-white" style="font-family: 'Caveat', cursive; font-size: 56px;">Explore Sentani</span>
+                </div>
+
+                <!-- Navigasi -->
+                <nav class="hidden md:flex items-center space-x-8 text-sm font-medium text-white/80">
+                    <a href="#" class="hover:text-brandOrange transition-colors duration-200">Beranda</a>
+                    <a href="#" class="hover:text-brandOrange transition-colors duration-200">Tentang</a>
+                    <a href="#" class="hover:text-brandOrange transition-colors duration-200">Program</a>
+                    <a href="#" class="hover:text-brandOrange transition-colors duration-200">Berita</a>
+                    <a href="#" class="hover:text-brandOrange transition-colors duration-200">Kontak</a>
+                </nav>
+
+                <!-- Tombol Pencarian -->
+                <button aria-label="Cari" 
+                        class="w-10 h-10 rounded-full bg-white/10 hover:bg-brandOrange/20 backdrop-blur-md flex items-center justify-center text-white hover:text-brandOrange transition-all duration-200">
+                    <i class="fa-solid fa-magnifying-glass text-sm"></i>
+                </button>
+            </div>
+        </header>
+
+        <!-- Konten Utama Hero - Teks Rata Kiri di Tengah -->
+        <main class="relative z-10 flex-1 flex items-center">
+            <div class="container mx-auto px-6">
+                <div class="flex justify-center">
+                    <div class="max-w-2xl text-left">
+                        <p class="text-sm md:text-base font-medium text-brandOrange tracking-[0.2em] mb-3" style="font-family: 'Caveat', cursive; font-size: 45px;">
+                            Meenven Keindahan
+                        </p>
+                        
+                        <h1 class="text-4xl md:text-5xl lg:text-6xl font-bold tracking-tight text-white mb-4 drop-shadow-lg leading-tight"
+                         style="font-family: 'Caveat', cursive; font-size: 100px;">
+                            Explore Sentani
+                        </h1>
+                        
+                        <p class="text-lg md:text-xl text-blue-200 font-medium italic mb-8 leading-relaxed" style="font-family: 'Caveat', cursive; font-size: 45px;">
+                            Surga Alam Papua yang Memukau
+                        </p>
+
+                        <!-- Tombol CTA -->
+                        <div class="flex flex-wrap items-center gap-4">
+                            <a href="#jelajahi" 
+                               class="bg-brandBlue hover:bg-blue-600 text-white font-medium px-8 py-3.5 rounded-full shadow-lg hover:shadow-blue-500/40 transition-all duration-300 transform hover:-translate-y-0.5">
+                                Jelajahi
+                            </a>
+                            <a href="#video" 
+                               class="bg-white/10 hover:bg-brandOrange/20 backdrop-blur-md border border-white/30 hover:border-brandOrange/50 text-white hover:text-brandOrange font-medium px-8 py-3.5 rounded-full transition-all duration-300">
+                                Video
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+
+        <!-- Kartu Kategori -->
+        <div class="relative z-10 pt-10 pb-14">
+            <div class="container mx-auto px-6">
+                <div class="grid grid-cols-2 md:grid-cols-4 gap-4 max-w-5xl mx-auto">
+                    
+                    <!-- Card 1: Wisata -->
+                    <div class="bg-white rounded-2xl p-3 shadow-xl text-gray-800 flex flex-col gap-3 group hover:scale-[1.03] transition-transform duration-300">
+                        <div class="h-28 rounded-xl overflow-hidden">
+                            <img src="./hero2.jpeg" alt="Wisata Danau Sentani" class="w-full h-full object-cover group-hover:scale-110 transition duration-500">
+                        </div>
+                        <div class="flex items-center gap-2 px-1 pb-1">
+                            <div class="w-7 h-7 rounded-full bg-orange-500/15 flex items-center justify-center text-brandOrange">
+                                <i class="fa-solid fa-mountain-sun text-xs"></i>
+                            </div>
+                            <span class="font-medium text-sm text-gray-800">Wisata</span>
+                        </div>
+                    </div>
+
+                    <!-- Card 2: Budaya -->
+                    <div class="bg-white rounded-2xl p-3 shadow-xl text-gray-800 flex flex-col gap-3 group hover:scale-[1.03] transition-transform duration-300">
+                        <div class="h-28 rounded-xl overflow-hidden">
+                            <img src="./hero1.jpeg" alt="Budaya Papua" class="w-full h-full object-cover group-hover:scale-110 transition duration-500">
+                        </div>
+                        <div class="flex items-center gap-2 px-1 pb-1">
+                            <div class="w-7 h-7 rounded-full bg-blue-500/15 flex items-center justify-center text-brandBlue">
+                                <i class="fa-solid fa-feather text-xs"></i>
+                            </div>
+                            <span class="font-medium text-sm text-gray-800">Budaya</span>
+                        </div>
+                    </div>
+
+                    <!-- Card 3: Ekowisata -->
+                    <div class="bg-white rounded-2xl p-3 shadow-xl text-gray-800 flex flex-col gap-3 group hover:scale-[1.03] transition-transform duration-300">
+                        <div class="h-28 rounded-xl overflow-hidden">
+                            <img src="./hero1.jpeg" alt="Ekowisata" class="w-full h-full object-cover group-hover:scale-110 transition duration-500">
+                        </div>
+                        <div class="flex items-center gap-2 px-1 pb-1">
+                            <div class="w-7 h-7 rounded-full bg-orange-500/15 flex items-center justify-center text-brandOrange">
+                                <i class="fa-solid fa-seedling text-xs"></i>
+                            </div>
+                            <span class="font-medium text-sm text-gray-800">Ekowisata</span>
+                        </div>
+                    </div>
+
+                    <!-- Card 4: Komunitas -->
+                    <div class="bg-white rounded-2xl p-3 shadow-xl text-gray-800 flex flex-col gap-3 group hover:scale-[1.03] transition-transform duration-300">
+                        <div class="h-28 rounded-xl overflow-hidden">
+                            <img src="./hero1.jpeg" alt="Komunitas Lokal" class="w-full h-full object-cover group-hover:scale-110 transition duration-500">
+                        </div>
+                        <div class="flex items-center gap-2 px-1 pb-1">
+                            <div class="w-7 h-7 rounded-full bg-blue-500/15 flex items-center justify-center text-brandBlue">
+                                <i class="fa-solid fa-users text-xs"></i>
+                            </div>
+                            <span class="font-medium text-sm text-gray-800">Komunitas</span>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+
+    </div>
+
+    <!-- ==================== FOOTER ==================== -->
+    <footer class="bg-white text-gray-800 border-t border-gray-100">
+        <div class="container mx-auto px-6 py-12">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-10">
+                
+                <!-- Brand & Deskripsi -->
+                <div class="md:col-span-1">
+                    <div class="text-2xl font-semibold tracking-wider mb-4" style="font-family: 'Caveat', cursive; font-size: 45px;">
+                        <span class="text-gray-900">Explore</span><span class="text-brandBlue">Sentani</span>
+                    </div>
+                    <p class="text-sm text-gray-500 leading-relaxed">
+                        Menjelajahi keindahan alam dan budaya Danau Sentani, surga tersembunyi di tanah Papua.
+                    </p>
+                </div>
+
+                <!-- Menu Cepat -->
+                <div>
+                    <h4 class="font-semibold text-gray-900 mb-4">Menu</h4>
+                    <ul class="space-y-2 text-sm text-gray-500">
+                        <li><a href="#" class="hover:text-brandOrange transition-colors">Beranda</a></li>
+                        <li><a href="#" class="hover:text-brandOrange transition-colors">Tentang</a></li>
+                        <li><a href="#" class="hover:text-brandOrange transition-colors">Program</a></li>
+                        <li><a href="#" class="hover:text-brandOrange transition-colors">Berita</a></li>
+                        <li><a href="#" class="hover:text-brandOrange transition-colors">Kontak</a></li>
+                    </ul>
+                </div>
+
+                <!-- Kategori -->
+                <div>
+                    <h4 class="font-semibold text-gray-900 mb-4">Kategori</h4>
+                    <ul class="space-y-2 text-sm text-gray-500">
+                        <li><a href="#" class="hover:text-brandOrange transition-colors">Wisata</a></li>
+                        <li><a href="#" class="hover:text-brandOrange transition-colors">Budaya</a></li>
+                        <li><a href="#" class="hover:text-brandOrange transition-colors">Ekowisata</a></li>
+                        <li><a href="#" class="hover:text-brandOrange transition-colors">Komunitas</a></li>
+                    </ul>
+                </div>
+
+                <!-- Kontak & Sosial -->
+                <div>
+                    <h4 class="font-semibold text-gray-900 mb-4">Hubungi Kami</h4>
+                    <ul class="space-y-3 text-sm text-gray-500">
+                        <li class="flex items-start gap-2">
+                            <i class="fa-solid fa-location-dot text-brandOrange mt-0.5"></i>
+                            <span>Danau Sentani, Jayapura, Papua</span>
+                        </li>
+                        <li class="flex items-center gap-2">
+                            <i class="fa-solid fa-envelope text-brandBlue"></i>
+                            <span>info@meenen.id</span>
+                        </li>
+                    </ul>
+                    
+                    <!-- Sosial Media -->
+                    <div class="flex items-center gap-3 mt-5">
+                        <a href="#" class="w-9 h-9 rounded-full bg-gray-100 hover:bg-brandBlue hover:text-white flex items-center justify-center text-gray-600 transition-all">
+                            <i class="fa-brands fa-instagram text-sm"></i>
+                        </a>
+                        <a href="#" class="w-9 h-9 rounded-full bg-gray-100 hover:bg-brandBlue hover:text-white flex items-center justify-center text-gray-600 transition-all">
+                            <i class="fa-brands fa-facebook-f text-sm"></i>
+                        </a>
+                        <a href="#" class="w-9 h-9 rounded-full bg-gray-100 hover:bg-brandOrange hover:text-white flex items-center justify-center text-gray-600 transition-all">
+                            <i class="fa-brands fa-youtube text-sm"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Copyright -->
+            <div class="border-t border-gray-100 mt-10 pt-6 flex flex-col md:flex-row items-center justify-between gap-4 text-sm text-gray-400">
+                <p>© 2026 Meenen. Semua hak dilindungi.</p>
+                <div class="flex items-center gap-6">
+                    <a href="#" class="hover:text-brandOrange transition-colors">Kebijakan Privasi</a>
+                    <a href="#" class="hover:text-brandOrange transition-colors">Syarat & Ketentuan</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
