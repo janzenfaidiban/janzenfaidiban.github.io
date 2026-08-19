@@ -1,1380 +1,512 @@
 <!DOCTYPE html>
-<html lang="en">
-
+<html lang="id" class="scroll-smooth">
 <head>
-    <meta charset="utf-8">
-    <meta http-equiv="x-ua-compatible" content="ie=edge">
-    <title>Janzen Faidiban</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Primary Meta Tags -->
+    <title>Janzen Faidiban - Papua IT Consultant & Software Engineer</title>
 
-    <meta name="description" content="This website provides information about Janzen Faidiban.">
-    <meta name="keywords" content="Janzen Faidiban, Web Developer, IT Consultant, Coding Trainer, Papua, Jayapura">
-    <link rel="canonical" href="https://janzenfaidiban.github.io">
+    <meta name="title" content="Janzen Faidiban - Papua IT Consultant & Software Engineer">
+    <meta name="description" content="IT consultant, trainer, and full-stack web developer based in Jayapura, Papua. Co-founder of Nokensoft and EasySyntax, empowering local digital transformation.">
+    <meta name="author" content="Janzen Faidiban">
     <meta name="robots" content="index, follow">
 
-    <!-- Open Graph Meta Tags -->
-    <meta property="og:title" content="Janzen Faidiban">
-    <meta property="og:description" content="CEO of Nokensoft (PT Noken Inovasi Teknologi Informasi), Founder of SaCode (Information Communication Technology Community in Papua), Computer Literacy Tutor at SAGU Foundation.">
-    <meta property="og:image" content="https://janzenfaidiban.github.io/assets/images/about/about-janzen-papuancoders.png">
-    <meta property="og:url" content="https://janzenfaidiban.github.io">
-
-    <!-- Twitter Card Meta Tags -->
-    <meta name="twitter:card" content="summary">
-    <meta name="twitter:title" content="Janzen Faidiban">
-    <meta name="twitter:description" content="CEO of Nokensoft (PT Noken Inovasi Teknologi Informasi), Founder of SaCode (Information Communication Technology Community in Papua), Computer Literacy Tutor at SAGU Foundation.">
-    <meta name="twitter:image" content="https://janzenfaidiban.github.io/assets/images/about/about-janzen-papuancoders.png">
-
     <!-- Favicon -->
-    <link rel="shortcut icon" type="image/x-icon" href="assets/images/logo/favicon-janzen.png">
-    <!-- CSS 
-    ============================================ -->
-    <link rel="stylesheet" href="assets/css/vendor/bootstrap.min.css">
-    <link rel="stylesheet" href="assets/css/vendor/slick.css">
-    <link rel="stylesheet" href="assets/css/vendor/slick-theme.css">
-    <link rel="stylesheet" href="assets/css/vendor/aos.css">
-    <link rel="stylesheet" href="assets/css/plugins/feature.css">
-    <!-- Style css -->
-    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="icon" type="image/png" href="./logo.png">
+    <link rel="apple-touch-icon" href="./logo.png">
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://janzenfaidiban.com/">
+    <meta property="og:title" content="Janzen Faidiban - Papua IT Consultant & Software Engineer">
+    <meta property="og:description" content="IT consultant, trainer, and full-stack web developer based in Jayapura, Papua. Co-founder of Nokensoft and EasySyntax.">
+    <meta property="og:image" content="./logo.png">
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://janzenfaidiban.com/">
+    <meta property="twitter:title" content="Janzen Faidiban - Papua IT Consultant & Software Engineer">
+    <meta property="twitter:description" content="IT consultant, trainer, and full-stack web developer based in Jayapura, Papua. Co-founder of Nokensoft and EasySyntax.">
+    <meta property="twitter:image" content="./logo.png">
+
+    <!-- Tailwind CSS Play CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Alpine.js -->
+    <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
     <!-- Font Awesome -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-</head>
-
-<body class="template-color-1 spybody" data-spy="scroll" data-target=".navbar-example2" data-offset="150">
-    <!-- Start Header -->
-    <header class="rn-header haeder-default black-logo-version header--fixed header--sticky">
-        <div class="header-wrapper rn-popup-mobile-menu m--0 row align-items-center">
-            <!-- Start Header Left -->
-            <div class="col-lg-2 col-6">
-                <div class="header-left">
-                    <div class="logo">
-                        <a href="index.html">
-                            <img src="assets/images/logo/logo-jf.png" alt="logo">
-                        </a>
-                    </div>
-                </div>
-            </div>
-            <!-- End Header Left -->
-            <!-- Start Header Center -->
-            <div class="col-lg-10 col-6">
-                <div class="header-center">
-                    <nav id="sideNav" class="mainmenu-nav navbar-example2 d-none d-xl-block onepagenav">
-                        <!-- Start Mainmanu Nav -->
-                        <ul class="primary-menu nav nav-pills">
-                            <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
-                            <li class="nav-item"><a class="nav-link" href="#my-articles">My Articles</a></li>
-                            <li class="nav-item"><a class="nav-link" href="#project-showcase">Project Showcase</a></li>
-                            <li class="nav-item"><a class="nav-link" href="#workflow">Workflow</a></li>
-                            <li class="nav-item"><a class="nav-link" href="#what-i-do">What I Do</a></li>
-                            <li class="nav-item"><a class="nav-link" href="#resume">Resume</a></li>
-                        </ul>
-                        <!-- End Mainmanu Nav -->
-                    </nav>
-                    <!-- Start Header Right  -->
-                    <div class="header-right">
-                        <a class="rn-btn" target="_blank" href="https://wa.link/o5hecy"><span> <i class="fa-brands fa-whatsapp fs-2 me-2"></i> WHATSAPP ME</span></a>
-                        <div class="hamberger-menu d-block d-xl-none">
-                            <i id="menuBtn" class="feather-menu humberger-menu"></i>
-                        </div>
-                        <div class="close-menu d-block">
-                            <span class="closeTrigger">
-                            <i data-feather="x"></i>
-                        </span>
-                        </div>
-                    </div>
-                    <!-- End Header Right  -->
-
-                </div>
-            </div>
-            <!-- End Header Center -->
-        </div>
-    </header>
-    <!-- End Header Area -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Google Fonts: Plus Jakarta Sans -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
     
-    <!-- Start Popup Mobile Menu  -->
-    <div class="popup-mobile-menu">
-        <div class="inner">
-            <div class="menu-top">
-                <div class="menu-header">
-                    <a class="logo" href="index.html">
-                        <img src="assets/images/logo/logo-janzen.png" alt="Personal Portfolio">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['"Plus Jakarta Sans"', 'sans-serif'],
+                    },
+                }
+            }
+        }
+    </script>
+    <style>
+        ::-webkit-scrollbar {
+            width: 4px;
+        }
+        ::-webkit-scrollbar-track {
+            background: #f1f5f9;
+        }
+        ::-webkit-scrollbar-thumb {
+            background: #cbd5e1;
+        }
+    </style>
+</head>
+<body class="bg-slate-50 font-sans text-slate-800 antialiased selection:bg-slate-800 selection:text-white pt-16 md:pt-20 pb-20 md:pb-12" x-data="{ activeTab: 'about' }">
+
+   <!-- DESKTOP FIXED TOP NAVIGATION -->
+<header class="hidden md:flex fixed top-0 left-0 right-0 h-16 bg-white/90 backdrop-blur-md border-b border-slate-200 z-50 shadow-xs">
+    <div class="max-w-4xl mx-auto w-full px-6 flex items-center justify-between">
+        
+        <!-- Logo & Title -->
+        <div class="flex items-center space-x-3">
+            <div class="w-9 h-9 flex items-center justify-center">
+                <img src="./logo.png" alt="Logo" class="w-full h-full object-contain">
+            </div>
+            <div>
+                <h1 class="font-bold text-slate-900 text-sm leading-tight">Janzen Faidiban</h1>
+                <p class="text-[11px] text-slate-500 font-medium">Papua IT Consultant</p>
+            </div>
+        </div>
+
+        <!-- Desktop Menu Items -->
+        <nav class="flex items-center space-x-1">
+            <button @click="activeTab = 'about'" :class="activeTab === 'about' ? 'bg-slate-900 text-white font-semibold' : 'text-slate-600 hover:bg-slate-100 font-medium'" class="px-4 py-2 rounded-lg text-xs transition">
+                Hello
+            </button>
+            <button @click="activeTab = 'projects'" :class="activeTab === 'projects' ? 'bg-slate-900 text-white font-semibold' : 'text-slate-600 hover:bg-slate-100 font-medium'" class="px-4 py-2 rounded-lg text-xs transition">
+                Featured Projects
+            </button>
+            <button @click="activeTab = 'articles'" :class="activeTab === 'articles' ? 'bg-slate-900 text-white font-semibold' : 'text-slate-600 hover:bg-slate-100 font-medium'" class="px-4 py-2 rounded-lg text-xs transition">
+                My Articles
+            </button>
+            <button @click="activeTab = 'contact'" :class="activeTab === 'contact' ? 'bg-slate-900 text-white font-semibold' : 'text-slate-600 hover:bg-slate-100 font-medium'" class="px-4 py-2 rounded-lg text-xs transition">
+                Get in Touch
+            </button>
+        </nav>
+
+        <!-- Status Badge -->
+        <div class="flex items-center space-x-2 text-slate-500 text-xs bg-slate-100 px-3 py-1.5 rounded-full border border-slate-200">
+            <span class="w-2 h-2 rounded-full bg-emerald-500 animate-pulse"></span>
+            <span>Available for Collabs</span>
+        </div>
+
+    </div>
+</header>
+
+
+    <!-- MOBILE TOP HEADER (Logo & Subtitle Center) -->
+    <header class="md:hidden px-6 py-4 bg-white border-b border-slate-200 fixed top-0 left-0 right-0 z-40 flex flex-col items-center justify-center text-center shadow-xs">
+        <div class="w-9 h-9 flex items-center justify-center mb-1">
+            <img src="./logo.png" alt="Logo" class="w-full h-full object-contain">
+        </div>
+        <h1 class="font-bold text-slate-900 text-xs leading-tight">Janzen Faidiban - Papua IT Consultant</h1>
+    </header>
+
+
+    <!-- MAIN CONTENT CONTAINER -->
+    <main class="max-w-3xl mx-auto px-6 py-8 space-y-8 min-h-[75vh]">
+        
+        <!-- TAB: ABOUT ME -->
+        <section x-show="activeTab === 'about'" x-transition.opacity.duration.200ms id="about" class="space-y-6">
+            <div class="text-xs font-mono text-slate-400 flex items-center space-x-2">
+                <span>docs</span>
+                <span>/</span>
+                <span class="text-slate-800 font-semibold">about-me.md</span>
+            </div>
+
+            <div class="space-y-3">
+                <h2 class="text-2xl font-extrabold tracking-tight text-slate-900 border-l-4 border-slate-900 pl-3">
+                    Hello, World! 👋
+                </h2>
+                <p class="text-sm text-slate-600 leading-relaxed">
+                    I am an IT Consultant, Trainer, and Full-Stack Developer based in Jayapura, Papua. Specializing in building digital solutions, web applications, and empowering local tech communities.
+                </p>
+            </div>
+
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 text-xs">
+                <div class="p-4 bg-white rounded-xl border border-slate-200 shadow-xs">
+                    <span class="text-slate-400 block mb-1 font-mono uppercase text-[10px]">Experience</span>
+                    <strong class="text-slate-900 text-sm">10+ Years Professional</strong>
+                </div>
+                <div class="p-4 bg-white rounded-xl border border-slate-200 shadow-xs">
+                    <span class="text-slate-400 block mb-1 font-mono uppercase text-[10px]">Base Location</span>
+                    <strong class="text-slate-900 text-sm">Jayapura, Papua/New Guinea Islands.</strong>
+                </div>
+            </div>
+
+            <div class="space-y-3 pt-2">
+                <h3 class="text-xs font-bold uppercase tracking-wider text-slate-400 font-mono">Core Values</h3>
+                <div class="flex flex-wrap gap-2">
+                    <span class="px-3 py-1.5 bg-white text-slate-700 text-xs font-medium rounded-lg border border-slate-200 shadow-xs">Innovation & Impact</span>
+                    <span class="px-3 py-1.5 bg-slate-900 text-slate-100 text-xs font-medium rounded-lg border border-slate-800 shadow-xs">Digital Empowerment</span>
+                    <span class="px-3 py-1.5 bg-slate-900 text-slate-100 text-xs font-medium rounded-lg border border-slate-800 shadow-xs">Community Driven</span>
+                    <span class="px-3 py-1.5 bg-white text-slate-700 text-xs font-medium rounded-lg border border-slate-200 shadow-xs">Simplicity & Code</span>
+                    <span class="px-3 py-1.5 bg-white text-slate-700 text-xs font-medium rounded-lg border border-slate-200 shadow-xs">Continuous Learning</span>
+                    <span class="px-3 py-1.5 bg-white text-slate-700 text-xs font-medium rounded-lg border border-slate-200 shadow-xs">Collaboration First</span>
+                    <span class="px-3 py-1.5 bg-white text-slate-700 text-xs font-medium rounded-lg border border-slate-200 shadow-xs">Integrity & Trust</span>
+                </div>
+            </div>
+        </section>
+
+        <!-- TAB: MY PROJECTS -->
+        <section x-show="activeTab === 'projects'" x-transition.opacity.duration.200ms id="projects" class="space-y-6" style="display: none;">
+            
+            <!-- TAB: MY PROJECTS -->
+            <section x-show="activeTab === 'projects'" x-transition.opacity.duration.200ms id="projects" class="space-y-6" style="display: none;">
+                <div class="text-xs font-mono text-slate-400 flex items-center space-x-2">
+                    <span>docs</span>
+                    <span>/</span>
+                    <span class="text-slate-800 font-semibold">projects.json</span>
+                </div>
+
+                <div class="space-y-2">
+                    <h2 class="text-2xl font-extrabold tracking-tight text-slate-900 border-l-4 border-slate-900 pl-3">
+                        Featured Projects
+                    </h2>
+                    <p class="text-xs text-slate-500">Selected digital platforms and system architectures.</p>
+                </div>
+
+                <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                    <!-- Project 1: Nokensoft (Dark Theme) -->
+                    <a href="https://nokensoft.com" target="_blank" class="p-5 rounded-xl border border-slate-800 hover:border-slate-600 transition bg-slate-900 space-y-2 shadow-xs group block">
+                        <div class="flex items-center justify-between">
+                            <h4 class="font-bold text-sm text-slate-100 group-hover:text-blue-400 transition">Nokensoft Digital Agency</h4>
+                            <div class="flex items-center space-x-1.5">
+                                <span class="text-[10px] font-mono bg-slate-800 text-slate-300 px-2 py-0.5 rounded">IT Company</span>
+                                <i class="fa-solid fa-arrow-up-right-from-square text-[10px] text-slate-500 group-hover:text-slate-300 group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition"></i>
+                            </div>
+                        </div>
+                        <p class="text-xs text-slate-300">IT consulting, software house, and AI integration driving digital transformation in Papua.</p>
+                        <div class="text-[11px] font-mono text-slate-400 pt-1 flex items-center space-x-1">
+                            <i class="fa-solid fa-code text-[10px]"></i>
+                            <span>Web Development & Consulting</span>
+                        </div>
                     </a>
-                    <div class="close-button">
-                        <button class="close-menu-activation close"><i data-feather="x"></i></button>
-                    </div>
+
+                    <!-- Project 2: EasySyntax -->
+                    <a href="https://easysyntax.id" target="_blank" class="p-5 rounded-xl border border-slate-200 hover:border-slate-900 transition bg-white space-y-2 shadow-xs group block">
+                        <div class="flex items-center justify-between">
+                            <h4 class="font-bold text-sm text-slate-900 group-hover:text-blue-600 transition">EasySyntax Platform</h4>
+                            <div class="flex items-center space-x-1.5">
+                                <span class="text-[10px] font-mono bg-slate-100 text-slate-600 px-2 py-0.5 rounded">Vibe Codes Training</span>
+                                <i class="fa-solid fa-arrow-up-right-from-square text-[10px] text-slate-400 group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition"></i>
+                            </div>
+                        </div>
+                        <p class="text-xs text-slate-600">Open-source learning platform focusing on modern vibe coding and AI workflows.</p>
+                        <div class="text-[11px] font-mono text-slate-400 pt-1 flex items-center space-x-1">
+                            <i class="fa-solid fa-code text-[10px]"></i>
+                            <span>Tailwind, Alpine, AI Tools</span>
+                        </div>
+                    </a>
+
+                    <!-- Project 3: SaCode -->
+                    <a href="https://sacode.web.id" target="_blank" class="p-5 rounded-xl border border-slate-200 hover:border-slate-900 transition bg-white space-y-2 shadow-xs group block sm:col-span-2">
+                        <div class="flex items-center justify-between">
+                            <h4 class="font-bold text-sm text-slate-900 group-hover:text-blue-600 transition">SaCode Community</h4>
+                            <div class="flex items-center space-x-1.5">
+                                <span class="text-[10px] font-mono bg-slate-100 text-slate-600 px-2 py-0.5 rounded">Community</span>
+                                <i class="fa-solid fa-arrow-up-right-from-square text-[10px] text-slate-400 group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition"></i>
+                            </div>
+                        </div>
+                        <p class="text-xs text-slate-600">Papuan coding community & courses empowering local youths in software engineering.</p>
+                        <div class="text-[11px] font-mono text-slate-400 pt-1 flex items-center space-x-1">
+                            <i class="fa-solid fa-code text-[10px]"></i>
+                            <span>Training & Mentorship</span>
+                        </div>
+                    </a>
                 </div>
-                <p class="discription">👋🏽 Hi, I'm Janzen! I am the CEO of Nokensoft, where I help organisations and communities with Tech Solutions. I also teach coding at SaCode to show others how to create computer programs. To show that I realy love sharing knowledge, I help people with computer literacy at SAGU Foundation.</p>
-            </div>
-            <div class="content">
-                <ul class="primary-menu nav nav-pills onepagenav">
-                    <li class="nav-item current"><a class="nav-link smoth-animation active" href="#home">Home</a></li>
-                    <li class="nav-item"><a class="nav-link smoth-animation" href="#my-articles">My Articles</a></li>
-                    <li class="nav-item"><a class="nav-link smoth-animation" href="#project-showcase">Project Showcase</a></li>
-                    <li class="nav-item"><a class="nav-link smoth-animation" href="#what-i-do">What I Do</a></li>
-                    <li class="nav-item"><a class="nav-link smoth-animation" href="#resume">Resume</a></li>
-                </ul>
-                <!-- social sharea area -->
-                <div class="social-share-style-1 mt--40">
-                    <span class="title">find with me</span>
-                    <ul class="social-share d-flex liststyle">
-                        <li class="github">
-                            <a href="https://github.com/janzenfaidiban" target="_blank">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
-                                    viewBox="0 0 24 24" fill="none" stroke="currentColor"
-                                    stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
-                                    class="feather feather-github">
-                                    <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 
-                                            5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 
-                                            13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77 
-                                            5.44 5.44 0 0 0 3.5 9.5c0 5.42 3.3 6.61 6.44 7a3.37 
-                                            3.37 0 0 0-.94 2.6V22"></path>
-                                </svg>
+            </section>
+
+
+            <!-- TAB: OTHER PROJECTS -->
+            <section x-show="activeTab === 'projects'" x-transition.opacity.duration.200ms id="projects" class="space-y-6" style="display: none;">
+
+                <div class="space-y-2">
+                    <h2 class="text-2xl font-extrabold tracking-tight text-slate-900 border-l-4 border-slate-900 pl-3">
+                        Other Projects
+                    </h2>
+                    <p class="text-xs text-slate-500">Portfolio of digital platforms classified by categories.</p>
+                </div>
+
+                <!-- Projects Stack by Categories (Cloud Badge Style) -->
+                <div class="space-y-6">
+                    
+                    <!-- CAFE SHOPS -->
+                    <div class="p-4 bg-white rounded-2xl border border-slate-200 shadow-xs space-y-3">
+                        <h3 class="text-xs font-bold uppercase tracking-wider text-slate-400 font-mono">Cafe Shops</h3>
+                        <div class="flex flex-wrap gap-2">
+                            <a href="https://mecoffee.org/" target="_blank" class="inline-flex items-center space-x-1.5 px-3 py-1.5 bg-slate-50 hover:bg-slate-900 hover:text-white text-slate-700 text-xs font-medium rounded-lg border border-slate-200 transition group">
+                                <span>MeCoffee</span>
+                                <i class="fa-solid fa-arrow-up-right-from-square text-[10px] text-slate-400 group-hover:text-white"></i>
                             </a>
-                        </li>
-                        <li class="instagram"><a href="https://instagram.com/janzen.faidiban/"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-instagram">
-                                    <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
-                                    <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
-                                    <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
-                                </svg></a>
-                        </li>
-                        <li class="linkedin"><a href="https://linkedin.com/in/janzen-faidiban-48ba28169/"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-linkedin">
-                                    <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path>
-                                    <rect x="2" y="9" width="4" height="12"></rect>
-                                    <circle cx="4" cy="4" r="2"></circle>
-                                </svg></a>
-                        </li>
-
-                        <li class="youtube">
-                            <a href="https://www.youtube.com/@janzenfaidiban" target="_blank">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" 
-                                    viewBox="0 0 24 24" fill="none" stroke="currentColor" 
-                                    stroke-width="2" stroke-linecap="round" stroke-linejoin="round" 
-                                    class="feather feather-youtube">
-                                    <path d="M22.54 6.42a2.78 2.78 0 0 0-1.95-2C18.88 4 12 4 12 4s-6.88 0-8.59.42a2.78 2.78 0 0 0-1.95 2A29.94 29.94 0 0 0 1 12a29.94 29.94 0 0 0 .46 5.58 2.78 2.78 0 0 0 1.95 2C5.12 20 12 20 12 20s6.88 0 8.59-.42a2.78 2.78 0 0 0 1.95-2A29.94 29.94 0 0 0 23 12a29.94 29.94 0 0 0-.46-5.58z"></path>
-                                    <polygon points="9.75 15.02 15.5 12 9.75 8.98 9.75 15.02"></polygon>
-                                </svg>
+                            <a href="https://magiccoffee.id/" target="_blank" class="inline-flex items-center space-x-1.5 px-3 py-1.5 bg-slate-50 hover:bg-slate-900 hover:text-white text-slate-700 text-xs font-medium rounded-lg border border-slate-200 transition group">
+                                <span>Magic Coffee</span>
+                                <i class="fa-solid fa-arrow-up-right-from-square text-[10px] text-slate-400 group-hover:text-white"></i>
                             </a>
-                        </li>
-                    </ul>
+                            <a href="https://havencafesentani.com/" target="_blank" class="inline-flex items-center space-x-1.5 px-3 py-1.5 bg-slate-50 hover:bg-slate-900 hover:text-white text-slate-700 text-xs font-medium rounded-lg border border-slate-200 transition group">
+                                <span>Haven Cafe</span>
+                                <i class="fa-solid fa-arrow-up-right-from-square text-[10px] text-slate-400 group-hover:text-white"></i>
+                            </a>
+                            <a href="https://givebacktools.com/" target="_blank" class="inline-flex items-center space-x-1.5 px-3 py-1.5 bg-slate-50 hover:bg-slate-900 hover:text-white text-slate-700 text-xs font-medium rounded-lg border border-slate-200 transition group">
+                                <span>Give Back Tools</span>
+                                <i class="fa-solid fa-arrow-up-right-from-square text-[10px] text-slate-400 group-hover:text-white"></i>
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- COMMUNITIES -->
+                    <div class="p-4 bg-white rounded-2xl border border-slate-200 shadow-xs space-y-3">
+                        <h3 class="text-xs font-bold uppercase tracking-wider text-slate-400 font-mono">Communities</h3>
+                        <div class="flex flex-wrap gap-2">
+                            <a href="https://databasegkiklasiswaibumoi.online/" target="_blank" class="inline-flex items-center space-x-1.5 px-3 py-1.5 bg-slate-50 hover:bg-slate-900 hover:text-white text-slate-700 text-xs font-medium rounded-lg border border-slate-200 transition group">
+                                <span>Online Database GKI Klasis Waibu Moi</span>
+                                <i class="fa-solid fa-arrow-up-right-from-square text-[10px] text-slate-400 group-hover:text-white"></i>
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- EDUCATION -->
+                    <div class="p-4 bg-white rounded-2xl border border-slate-200 shadow-xs space-y-3">
+                        <h3 class="text-xs font-bold uppercase tracking-wider text-slate-400 font-mono">Education</h3>
+                        <div class="flex flex-wrap gap-2">
+                            <a href="https://sttgidi.ac.id/" target="_blank" class="inline-flex items-center space-x-1.5 px-3 py-1.5 bg-slate-50 hover:bg-slate-900 hover:text-white text-slate-700 text-xs font-medium rounded-lg border border-slate-200 transition group">
+                                <span>STT GIDI Papua</span>
+                                <i class="fa-solid fa-arrow-up-right-from-square text-[10px] text-slate-400 group-hover:text-white"></i>
+                            </a>
+                            <a href="https://myfinancials.id/" target="_blank" class="inline-flex items-center space-x-1.5 px-3 py-1.5 bg-slate-50 hover:bg-slate-900 hover:text-white text-slate-700 text-xs font-medium rounded-lg border border-slate-200 transition group">
+                                <span>MY Financials</span>
+                                <i class="fa-solid fa-arrow-up-right-from-square text-[10px] text-slate-400 group-hover:text-white"></i>
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- TOURISM -->
+                    <div class="p-4 bg-white rounded-2xl border border-slate-200 shadow-xs space-y-3">
+                        <h3 class="text-xs font-bold uppercase tracking-wider text-slate-400 font-mono">Tourism</h3>
+                        <div class="flex flex-wrap gap-2">
+                            <a href="https://yotorohills.github.io/" target="_blank" class="inline-flex items-center space-x-1.5 px-3 py-1.5 bg-slate-50 hover:bg-slate-900 hover:text-white text-slate-700 text-xs font-medium rounded-lg border border-slate-200 transition group">
+                                <span>Yotoro Hill's</span>
+                                <i class="fa-solid fa-arrow-up-right-from-square text-[10px] text-slate-400 group-hover:text-white"></i>
+                            </a>
+                            <a href="https://trek-papua.com/" target="_blank" class="inline-flex items-center space-x-1.5 px-3 py-1.5 bg-slate-50 hover:bg-slate-900 hover:text-white text-slate-700 text-xs font-medium rounded-lg border border-slate-200 transition group">
+                                <span>Trek-Papua</span>
+                                <i class="fa-solid fa-arrow-up-right-from-square text-[10px] text-slate-400 group-hover:text-white"></i>
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- AVIATION -->
+                    <div class="p-4 bg-white rounded-2xl border border-slate-200 shadow-xs space-y-3">
+                        <h3 class="text-xs font-bold uppercase tracking-wider text-slate-400 font-mono">Aviation</h3>
+                        <div class="flex flex-wrap gap-2">
+                            <a href="https://gidimissionaviation.org/" target="_blank" class="inline-flex items-center space-x-1.5 px-3 py-1.5 bg-slate-50 hover:bg-slate-900 hover:text-white text-slate-700 text-xs font-medium rounded-lg border border-slate-200 transition group">
+                                <span>GIDI Mission Aviation</span>
+                                <i class="fa-solid fa-arrow-up-right-from-square text-[10px] text-slate-400 group-hover:text-white"></i>
+                            </a>
+                            <a href="https://tarikuaviation.org/" target="_blank" class="inline-flex items-center space-x-1.5 px-3 py-1.5 bg-slate-50 hover:bg-slate-900 hover:text-white text-slate-700 text-xs font-medium rounded-lg border border-slate-200 transition group">
+                                <span>Tariku Aviation</span>
+                                <i class="fa-solid fa-arrow-up-right-from-square text-[10px] text-slate-400 group-hover:text-white"></i>
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- NGO -->
+                    <div class="p-4 bg-white rounded-2xl border border-slate-200 shadow-xs space-y-3">
+                        <h3 class="text-xs font-bold uppercase tracking-wider text-slate-400 font-mono">NGO</h3>
+                        <div class="flex flex-wrap gap-2">
+                            <a href="https://ypmd-irja.org/" target="_blank" class="inline-flex items-center space-x-1.5 px-3 py-1.5 bg-slate-50 hover:bg-slate-900 hover:text-white text-slate-700 text-xs font-medium rounded-lg border border-slate-200 transition group">
+                                <span>YPMD-IRJA</span>
+                                <i class="fa-solid fa-arrow-up-right-from-square text-[10px] text-slate-400 group-hover:text-white"></i>
+                            </a>
+                            <a href="https://ppmapapua.org/" target="_blank" class="inline-flex items-center space-x-1.5 px-3 py-1.5 bg-slate-50 hover:bg-slate-900 hover:text-white text-slate-700 text-xs font-medium rounded-lg border border-slate-200 transition group">
+                                <span>PPMA PAPUA</span>
+                                <i class="fa-solid fa-arrow-up-right-from-square text-[10px] text-slate-400 group-hover:text-white"></i>
+                            </a>
+                            <a href="https://yalipapua.org/" target="_blank" class="inline-flex items-center space-x-1.5 px-3 py-1.5 bg-slate-50 hover:bg-slate-900 hover:text-white text-slate-700 text-xs font-medium rounded-lg border border-slate-200 transition group">
+                                <span>YALI PAPUA</span>
+                                <i class="fa-solid fa-arrow-up-right-from-square text-[10px] text-slate-400 group-hover:text-white"></i>
+                            </a>
+                            <a href="http://kimyals.org/" target="_blank" class="inline-flex items-center space-x-1.5 px-3 py-1.5 bg-slate-50 hover:bg-slate-900 hover:text-white text-slate-700 text-xs font-medium rounded-lg border border-slate-200 transition group">
+                                <span>The Spirit of Kimyals</span>
+                                <i class="fa-solid fa-arrow-up-right-from-square text-[10px] text-slate-400 group-hover:text-white"></i>
+                            </a>
+                            <a href="https://yadupa.org/" target="_blank" class="inline-flex items-center space-x-1.5 px-3 py-1.5 bg-slate-50 hover:bg-slate-900 hover:text-white text-slate-700 text-xs font-medium rounded-lg border border-slate-200 transition group">
+                                <span>YADUPA</span>
+                                <i class="fa-solid fa-arrow-up-right-from-square text-[10px] text-slate-400 group-hover:text-white"></i>
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- PERSONAL -->
+                    <div class="p-4 bg-white rounded-2xl border border-slate-200 shadow-xs space-y-3">
+                        <h3 class="text-xs font-bold uppercase tracking-wider text-slate-400 font-mono">Personal</h3>
+                        <div class="flex flex-wrap gap-2">
+                            <a href="https://apwenda.github.io/" target="_blank" class="inline-flex items-center space-x-1.5 px-3 py-1.5 bg-slate-50 hover:bg-slate-900 hover:text-white text-slate-700 text-xs font-medium rounded-lg border border-slate-200 transition group">
+                                <span>Deni Wenda</span>
+                                <i class="fa-solid fa-arrow-up-right-from-square text-[10px] text-slate-400 group-hover:text-white"></i>
+                            </a>
+                            <a href="https://esternumbre.github.io/" target="_blank" class="inline-flex items-center space-x-1.5 px-3 py-1.5 bg-slate-50 hover:bg-slate-900 hover:text-white text-slate-700 text-xs font-medium rounded-lg border border-slate-200 transition group">
+                                <span>Ester Numbre</span>
+                                <i class="fa-solid fa-arrow-up-right-from-square text-[10px] text-slate-400 group-hover:text-white"></i>
+                            </a>
+                        </div>
+                    </div>
+
                 </div>
-                <!-- end -->
-            </div>
-        </div>
-    </div>
-    <!-- End Popup Mobile Menu  -->
+            </section>
 
 
-
-    <!-- Start Main Page Wrapper -->
-    <main class="main-page-wrapper">
-
-        <!-- Start Slider Area -->
-        <div id="home" class="rn-slider-area">
-            <div class="slide slider-style-2">
-                <div class="container">
-                    <div class="row align-items-center row--30">
-                        <div class="col-lg-5">
-                            <div class="thumbnail style-2">
-                                <div class="inner ">
-                                    <img class="w-100" src="assets/images/about/about-janzen-papuancoders.png" alt="Personal Portfolio Images">
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="col-lg-7 mt_md--40 mt_sm--40">
-                            <div class="content">
-                                <div class="inner mb-0">
-                                    <h1 class="title">Hi, I’m <span>Janzen Faidiban</span><br>
-                                        <span class="header-caption" id="page-top">
-                                            <span class="cd-headline clip is-full-width">
-                                                <span class="cd-words-wrapper" style="width: 178px;">
-                                                    <b class="is-visible">an IT Consultant.</b>
-                                                    <b class="is-hidden">a Coding Trainer.</b>
-                                                    <b class="is-hidden">a Computer Literacy Tutor.</b>
-                                                </span>
-                                        </span>
-                                        </span>
-                                    </h1>
-
-                                    <div>
-                                        <p class="description">👋🏽 Hi, I'm Janzen! I am the CEO of Nokensoft, where I help organisations and communities with Tech Solutions. I also teach coding at SaCode to show others how to create computer programs. To show that I realy love sharing knowledge, I help people with computer literacy at SAGU Foundation.</p>
-                                    </div>
-                                </div>
-                                <div class="row">
-                                    <div class="col-12">
-                                        <div class="social-share-inner-left">
-                                            <span class="title">find with me</span>
-                                            <ul class="social-share d-flex liststyle">
-                                                <li class="github"><a href="https://github.com/janzenfaidiban" target="_blank">
-                                                    <i data-feather="github"></i></a>
-                                                <!-- <li class="linkedin"><a href="https://linkedin.com/in/janzen-faidiban-48ba28169/" target="_blank"><i data-feather="linkedin"></i></a>
-                                                </li>
-                                                <li class="instagram"><a href="https://instagram.com/janzen.faidiban/" target="_blank">
-                                                    <i data-feather="instagram"></i></a>
-                                                </li> -->
-                                                <li class="youtube"><a href="https://www.youtube.com/@janzenfaidiban" target="_blank">
-                                                    <i data-feather="youtube"></i></a>
-                                                </li>
-                                            </ul>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- End Slider Area -->  
-         
-        
-        <!-- Start Project Showcase Area -->
-        <div id="project-showcase" class="rn-portfolio-area rn-section-gap section-separator">
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-12">
-                        <div class="section-title text-center">
-                            <span class="subtitle">Here I show you, what I did.</span>
-                            <h2 class="title">Project Showcase</h2>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="row row--25 mt--10 mt_md--10 mt_sm--10">
-                    
-                    <!-- Start Single Portfolio -->
-                    <div data-aos="fade-up" data-aos-delay="100" data-aos-once="true" class="col-lg-6 col-xl-4 col-md-6 col-12 mt--50 mt_md--30 mt_sm--30">
-                        <div class="rn-portfolio" data-bs-toggle="modal" data-bs-target="#exampleModalCenter">
-                            <div class="inner">
-                                <div class="thumbnail">
-                                    <a href="https://ypmd-irja.org/" target="_blank">
-                                        <img src="assets/images/work/janzen-project-ypmd-irja.png" alt="Trek-Papua Official Website">
-                                    </a>
-                                </div>
-                                <div class="content">
-                                    <div class="category-info">
-                                        <div class="category-list">
-                                            <a href="https://ypmd-irja.org/" target="_blank">
-                                                <i class="feather-globe"></i> www.ypmd-irja.org
-                                            </a>
-                                        </div>
-                                    </div>
-                                    <h4 class="title">
-                                        <a href="https://ypmd-irja.org/" target="_blank">
-                                            YPMD-IRJA, The First NGO (Non-Governmental Organization) in Papua <i class="feather-arrow-up-right"></i>
-                                        </a>
-                                    </h4>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- End Single Portfolio -->
-                    
-                    <!-- Start Single Portfolio -->
-                    <div data-aos="fade-up" data-aos-delay="100" data-aos-once="true" class="col-lg-6 col-xl-4 col-md-6 col-12 mt--50 mt_md--30 mt_sm--30">
-                        <div class="rn-portfolio" data-bs-toggle="modal" data-bs-target="#exampleModalCenter">
-                            <div class="inner">
-                                <div class="thumbnail">
-                                    <a href="https://havencafesentani.com/" target="_blank">
-                                        <img src="assets/images/work/janzen-project-haven-cafe-sentani.png" alt="Trek-Papua Official Website">
-                                    </a>
-                                </div>
-                                <div class="content">
-                                    <div class="category-info">
-                                        <div class="category-list">
-                                            <a href="https://havencafesentani.com/" target="_blank">
-                                                <i class="feather-globe"></i> www.havencafesentani.com
-                                            </a>
-                                        </div>
-                                    </div>
-                                    <h4 class="title">
-                                        <a href="https://havencafesentani.com/" target="_blank">
-                                            Haven Cafe Sentani - Coffee Shop & Reservation <i class="feather-arrow-up-right"></i>
-                                        </a>
-                                    </h4>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- End Single Portfolio -->
-                    
-                    <!-- Start Single Portfolio -->
-                    <div data-aos="fade-up" data-aos-delay="100" data-aos-once="true" class="col-lg-6 col-xl-4 col-md-6 col-12 mt--50 mt_md--30 mt_sm--30">
-                        <div class="rn-portfolio" data-bs-toggle="modal" data-bs-target="#exampleModalCenter">
-                            <div class="inner">
-                                <div class="thumbnail">
-                                    <a href="https://mecoffee.org/" target="_blank">
-                                        <img src="assets/images/work/janzen-project-me-coffee.png" alt="Trek-Papua Official Website">
-                                    </a>
-                                </div>
-                                <div class="content">
-                                    <div class="category-info">
-                                        <div class="category-list">
-                                            <a href="https://mecoffee.org/" target="_blank">
-                                                <i class="feather-globe"></i> www.mecoffee.org
-                                            </a>
-                                        </div>
-                                    </div>
-                                    <h4 class="title">
-                                        <a href="https://mecoffee.org/" target="_blank">
-                                            MeCoffee - Coffee Shop & Roastery <i class="feather-arrow-up-right"></i>
-                                        </a>
-                                    </h4>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- End Single Portfolio -->
-                    
-                    <!-- Start Single Portfolio -->
-                    <div data-aos="fade-up" data-aos-delay="100" data-aos-once="true" class="col-lg-6 col-xl-4 col-md-6 col-12 mt--50 mt_md--30 mt_sm--30">
-                        <div class="rn-portfolio" data-bs-toggle="modal" data-bs-target="#exampleModalCenter">
-                            <div class="inner">
-                                <div class="thumbnail">
-                                    <a href="https://magiccoffee.id/" target="_blank">
-                                        <img src="assets/images/work/janzen-project-magic-coffee.png" alt="Trek-Papua Official Website">
-                                    </a>
-                                </div>
-                                <div class="content">
-                                    <div class="category-info">
-                                        <div class="category-list">
-                                            <a href="https://magiccoffee.id/" target="_blank">
-                                                <i class="feather-globe"></i> www.magiccoffee.id
-                                            </a>
-                                        </div>
-                                    </div>
-                                    <h4 class="title">
-                                        <a href="https://magiccoffee.id/" target="_blank">
-                                            Magic Coffee - Coffee Shop <i class="feather-arrow-up-right"></i>
-                                        </a>
-                                    </h4>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- End Single Portfolio -->
-                    
-                    <!-- Start Single Portfolio -->
-                    <div data-aos="fade-up" data-aos-delay="100" data-aos-once="true" class="col-lg-6 col-xl-4 col-md-6 col-12 mt--50 mt_md--30 mt_sm--30">
-                        <div class="rn-portfolio" data-bs-toggle="modal" data-bs-target="#exampleModalCenter">
-                            <div class="inner">
-                                <div class="thumbnail">
-                                    <a href="https://trek-papua.com/" target="_blank">
-                                        <img src="assets/images/work/janzen-project-trekpapua.png" alt="Trek-Papua Official Website">
-                                    </a>
-                                </div>
-                                <div class="content">
-                                    <div class="category-info">
-                                        <div class="category-list">
-                                            <a href="https://trek-papua.com/" target="_blank">
-                                                <i class="feather-globe"></i> www.trek-papua.com
-                                            </a>
-                                        </div>
-                                    </div>
-                                    <h4 class="title">
-                                        <a href="https://trek-papua.com/" target="_blank">
-                                            Trek-Papua - Tour & Travel Company <i class="feather-arrow-up-right"></i>
-                                        </a>
-                                    </h4>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- End Single Portfolio -->
-                    
-                    <!-- Start Single Portfolio -->
-                    <div data-aos="fade-up" data-aos-delay="100" data-aos-once="true" class="col-lg-6 col-xl-4 col-md-6 col-12 mt--50 mt_md--30 mt_sm--30">
-                        <div class="rn-portfolio" data-bs-toggle="modal" data-bs-target="#exampleModalCenter">
-                            <div class="inner">
-                                <div class="thumbnail">
-                                    <a href="https://givebacktools.com/" target="_blank">
-                                        <img src="assets/images/work/janzen-project-givebacktools.png" alt="Give Back Tools Official Website">
-                                    </a>
-                                </div>
-                                <div class="content">
-                                    <div class="category-info">
-                                        <div class="category-list">
-                                            <a href="https://givebacktools.com/" target="_blank">
-                                                <i class="feather-globe"></i> www.givebacktools.com
-                                            </a>
-                                        </div>
-                                    </div>
-                                    <h4 class="title">
-                                        <a href="https://givebacktools.com/" target="_blank">
-                                            Give Back Tools - Carpenters Services <i class="feather-arrow-up-right"></i>
-                                        </a>
-                                    </h4>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- End Single Portfolio -->
-                    
-                    <!-- Start Single Portfolio -->
-                    <div data-aos="fade-up" data-aos-delay="100" data-aos-once="true" class="col-lg-6 col-xl-4 col-md-6 col-12 mt--50 mt_md--30 mt_sm--30">
-                        <div class="rn-portfolio" data-bs-toggle="modal" data-bs-target="#exampleModalCenter">
-                            <div class="inner">
-                                <div class="thumbnail">
-                                    <a href="https://rotbarkompak.com" target="_blank">
-                                        <img src="assets/images/work/janzen-project-robarkompak.png" alt="Personal Portfolio Images">
-                                    </a>
-                                </div>
-                                <div class="content">
-                                    <div class="category-info">
-                                        <div class="category-list">
-                                            <a href="https://rotbarkompak.com" target="_blank">
-                                                <i class="feather-globe"></i> www.rotbarkompak.com
-                                            </a>
-                                        </div>
-                                    </div>
-                                    <h4 class="title">
-                                        <a href="https://rotbarkompak.com" target="_blank">
-                                            Rot-Bar KOMPAK - Small Business<i class="feather-arrow-up-right"></i>
-                                        </a>
-                                    </h4>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- End Single Portfolio -->
-                    
-                    <!-- Start Single Portfolio -->
-                    <div data-aos="fade-up" data-aos-delay="100" data-aos-once="true" class="col-lg-6 col-xl-4 col-md-6 col-12 mt--50 mt_md--30 mt_sm--30">
-                        <div class="rn-portfolio" data-bs-toggle="modal" data-bs-target="#exampleModalCenter">
-                            <div class="inner">
-                                <div class="thumbnail">
-                                    <a href="https://wonefilm.com" target="_blank">
-                                        <img src="assets/images/work/janzen-project-wonefilm.png" alt="Personal Portfolio Images">
-                                    </a>
-                                </div>
-                                <div class="content">
-                                    <div class="category-info">
-                                        <div class="category-list">
-                                            <a href="https://wonefilm.com" target="_blank"><i class="feather-globe"></i> www.wonefilm.com</a>
-                                        </div>
-                                    </div>
-                                    <h4 class="title">
-                                        <a href="https://wonefilm.com" target="_blank">
-                                            Wonefilm - Videographer & Photographer Services<i class="feather-arrow-up-right"></i>
-                                        </a>
-                                    </h4>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- End Single Portfolio -->
-                    
-                    <!-- Start Single Portfolio -->
-                    <div data-aos="fade-up" data-aos-delay="100" data-aos-once="true" class="col-lg-6 col-xl-4 col-md-6 col-12 mt--50 mt_md--30 mt_sm--30">
-                        <div class="rn-portfolio" data-bs-toggle="modal" data-bs-target="#exampleModalCenter">
-                            <div class="inner">
-                                <div class="thumbnail">
-                                    <a href="https://highlandroastery.com" target="_blank">
-                                        <img src="assets/images/work/janzen-project-highlandroastery.png" alt="Personal Portfolio Images">
-                                    </a>
-                                </div>
-                                <div class="content">
-                                    <div class="category-info">
-                                        <div class="category-list">
-                                            <a href="https://highlandroastery.com" target="_blank"><i class="feather-globe"></i> www.highlandroastery.com</a>
-                                        </div>
-                                    </div>
-                                    <h4 class="title">
-                                        <a href="https://highlandroastery.com" target="_blank">
-                                            Highland Roastery - Coffe Shop & Roastery House<i class="feather-arrow-up-right"></i>
-                                        </a>
-                                    </h4>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- End Single Portfolio -->
-                    
-                    <!-- Start Single Portfolio -->
-                    <div data-aos="fade-up" data-aos-delay="100" data-aos-once="true" class="col-lg-6 col-xl-4 col-md-6 col-12 mt--50 mt_md--30 mt_sm--30">
-                        <div class="rn-portfolio" data-bs-toggle="modal" data-bs-target="#exampleModalCenter">
-                            <div class="inner">
-                                <div class="thumbnail">
-                                    <a href="https://acssobaham.yallas.org" target="_blank">
-                                        <img src="assets/images/work/janzen-project-acssobaham.png" alt="Personal Portfolio Images">
-                                    </a>
-                                </div>
-                                <div class="content">
-                                    <div class="category-info">
-                                        <div class="category-list">
-                                            <a href="https://acssobaham.yallas.org" target="_blank"><i class="feather-globe"></i> www.acssobaham.yallas.org</a>
-                                        </div>
-                                    </div>
-                                    <h4 class="title"><a href="https://acssobaham.yallas.org" target="_blank" title="Anugerah Christian School">ACS Sobaham <i
-                                        class="feather-arrow-up-right"></i></a></h4>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- End Single Portfolio -->
-
-                    <!-- Start Single Portfolio -->
-                    <div data-aos="fade-up" data-aos-delay="100" data-aos-once="true" class="col-lg-6 col-xl-4 col-md-6 col-12 mt--50 mt_md--30 mt_sm--30">
-                        <div class="rn-portfolio" data-bs-toggle="modal" data-bs-target="#exampleModalCenter">
-                            <div class="inner">
-                                <div class="thumbnail">
-                                    <a href="https://atstore.id" target="_blank">
-                                        <img src="assets/images/work/janzen-project-atstore.png" alt="Personal Portfolio Images">
-                                    </a>
-                                </div>
-                                <div class="content">
-                                    <div class="category-info">
-                                        <div class="category-list">
-                                            <a href="https://atstore.id" target="_blank"><i class="feather-globe"></i> www.atstore.id</a>
-                                        </div>
-                                    </div>
-                                    <h4 class="title"><a href="https://atstore.id" target="_blank">AT Store <i
-                                        class="feather-arrow-up-right"></i></a></h4>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- End Single Portfolio -->
-
-                    <!-- Start Single Portfolio -->
-                    <div data-aos="fade-up" data-aos-delay="100" data-aos-once="true" class="col-lg-6 col-xl-4 col-md-6 col-12 mt--50 mt_md--30 mt_sm--30">
-                        <div class="rn-portfolio" data-bs-toggle="modal" data-bs-target="#exampleModalCenter">
-                            <div class="inner">
-                                <div class="thumbnail">
-                                    <a href="https://sacode.web.id" target="_blank">
-                                        <img src="assets/images/work/janzen-project-sacode.png" alt="Personal Portfolio Images">
-                                    </a>
-                                </div>
-                                <div class="content">
-                                    <div class="category-info">
-                                        <div class="category-list">
-                                            <a href="https://sacode.web.id" target="_blank"><i class="feather-globe"></i> www.sacode.web.id</a>
-                                        </div>
-                                    </div>
-                                    <h4 class="title"><a href="https://sacode.web.id" target="_blank">SaCode <i
-                                        class="feather-arrow-up-right"></i></a></h4>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- End Single Portfolio -->
-
-                    <!-- Start Single Portfolio -->
-                    <div data-aos="fade-up" data-aos-delay="100" data-aos-once="true" class="col-lg-6 col-xl-4 col-md-6 col-12 mt--50 mt_md--30 mt_sm--30">
-                        <div class="rn-portfolio" data-bs-toggle="modal" data-bs-target="#exampleModalCenter">
-                            <div class="inner">
-                                <div class="thumbnail">
-                                    <a href="https://janzenfaidiban.github.io">
-                                        <img src="assets/images/work/janzen-project-personalweb.png" alt="Personal Portfolio Images">
-                                    </a>
-                                </div>
-                                <div class="content">
-                                    <div class="category-info">
-                                        <div class="category-list">
-                                            <a href="https://janzenfaidiban.github.io"><i class="feather-globe"></i> www.janzenfaidiban.github.io</a>
-                                        </div>
-                                    </div>
-                                    <h4 class="title"><a href="https://janzenfaidiban.github.io">Janzen Faidiban <i
-                                        class="feather-arrow-up-right"></i></a></h4>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- End Single Portfolio -->
-                    
-                </div>
-            </div>
-        </div>
-        <!-- End Project Showcase Area -->    
-
+        </section>
 
         
-
-
-
-
-
         
 
-
-
-
-
-<div id="workflow" class="rn-resume-area rn-section-gap section-separator">
-    <div class="container">
-        <div class="row">
-            <div class="col-lg-12">
-                <div data-aos="fade-up" data-aos-duration="500" data-aos-delay="100" data-aos-once="true" class="section-title text-center">
-                    <span class="subtitle">How I Work</span>
-                    <h2 class="title">Web Development Workflow</h2>
-                </div>
-            </div>
-        </div>
-
-        <div class="row mt--45">
-            <div class="col-lg-12">
-                <div data-aos="fade-up" data-aos-duration="500" data-aos-delay="200" data-aos-once="true" class="rn-nav-content">
-                    
-                    <div class="personal-experience-inner">
-                        <div class="row">
-                            <div class="col-md-10 mx-auto col-12">
-                                <div class="content">
-                                    <span class="subtitle">Step-by-step</span>
-                                    <h4 class="maintitle">Website Development Phases</h4>
-                                    <div class="experience-list">
-
-                                        <div class="resume-single-list">
-                                            <div class="inner">
-                                                <div class="heading">
-                                                    <div class="title">
-                                                        <h4>Initiation & Initial Analysis</h4>
-                                                        <span>Step 01</span>
-                                                    </div>
-                                                </div>
-                                                <p class="description">The initial phase to understand client needs, define the target audience, and draft the technical specifications of the website.</p>
-                                            </div>
-                                        </div>
-
-                                        <div class="resume-single-list">
-                                            <div class="inner">
-                                                <div class="heading">
-                                                    <div class="title">
-                                                        <h4>Drafting & Prototyping</h4>
-                                                        <span>Step 02</span>
-                                                    </div>
-                                                </div>
-                                                <p class="description">Creating visual design mockups to provide an interface preview before moving into the coding phase.</p>
-                                            </div>
-                                        </div>
-
-                                        <div class="resume-single-list">
-                                            <div class="inner">
-                                                <div class="heading">
-                                                    <div class="title">
-                                                        <h4>Content Development</h4>
-                                                        <span>Step 03</span>
-                                                    </div>
-                                                </div>
-                                                <p class="description">The process of organizing data, articles, images, and institutional profiles to meet digital information standards.</p>
-                                            </div>
-                                        </div>
-
-                                        <div class="resume-single-list">
-                                            <div class="inner">
-                                                <div class="heading">
-                                                    <div class="title">
-                                                        <h4>Domain, Hosting & Upload</h4>
-                                                        <span>Step 04</span>
-                                                    </div>
-                                                </div>
-                                                <p class="description">Server configuration (hosting), domain registration (.com/.id), and publishing the website files to the internet.</p>
-                                            </div>
-                                        </div>
-
-                                        <div class="resume-single-list">
-                                            <div class="inner">
-                                                <div class="heading">
-                                                    <div class="title">
-                                                        <h4>Testing & Finalization</h4>
-                                                        <span>Step 05</span>
-                                                    </div>
-                                                </div>
-                                                <p class="description">Final checks on performance, security, and responsiveness across various devices (Mobile/Laptop).</p>
-                                            </div>
-                                        </div>
-
-                                        <div class="resume-single-list">
-                                            <div class="inner">
-                                                <div class="heading">
-                                                    <div class="title">
-                                                        <h4>Launch (Go Live)</h4>
-                                                        <span>Step 06</span>
-                                                    </div>
-                                                </div>
-                                                <p class="description">The official website goes live and is ready for institutional or business operations.</p>
-                                            </div>
-                                        </div>
-
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    </div>
-            </div>
-        </div>
-    </div>
-</div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-         
+    <!-- TAB: ARTICLES -->
+    <section x-show="activeTab === 'articles'" x-transition.opacity.duration.200ms id="articles" class="space-y-6" style="display: none;" 
+        x-data="{
+            displayCount: 3,
+            articles: [
+                {
+                    title: 'Menata Ulang Istilah UMKM dalam Bisnis Rintisan',
+                    desc: 'Penting bagi para pelaku usaha untuk mengenali ukuran bisnis yang sesungguhnya agar strategi pertumbuhan dan skala prioritas yang diambil dapat berjalan lebih efektif.',
+                    url: 'https://ypmd-irja.org/berita/menata-ulang-istilah-umkm-dalam-bisnis-rintisan',
+                    img: 'https://ypmd-irja.org/storage/media/2026_08_12_154955_kr5lN7OfbV.webp'
+                },
+                {
+                    title: 'Daftar Usaha Rintisan Yang Memanfaatkan Media Digital...',
+                    desc: 'Eksplorasi penggunaan media digital untuk profil usaha dan katalog produk.',
+                    url: 'https://medium.com/@janzenfaidiban/daftar-usaha-rintisan-yang-memanfaatkan-media-digital-untuk-menampilkan-katalog-produk-dan-profil-f99378d5a734',
+                    img: 'https://miro.medium.com/v2/resize:fit:1100/format:webp/1*Xq1OzlTXHDxWx4mIKbfoTg.png'
+                },
+                {
+                    title: 'Mimpi ke Amerika Dimulai dari Papua: Pengalaman YSEALI',
+                    desc: 'Catatan perjalanan dan pengalaman mengikuti YSEALI Cycle 2 2024.',
+                    url: 'https://medium.com/@janzenfaidiban/mimpi-ke-amerika-dimulai-dari-papua-pengalaman-yseali-cycle-2-2024-part-i-9e7b81501bdb',
+                    img: 'https://miro.medium.com/v2/resize:fit:1100/format:webp/1*Be0fNzf_XB5ICDHfYZ4nSQ.jpeg'
+                },
+                {
+                    title: 'Komunitas SaCode untuk Peningkatan Keterampilan IT',
+                    desc: 'Membangun jaringan profesional bagi pecinta IT muda di Papua.',
+                    url: 'https://medium.com/@janzenfaidiban/komunitas-sacode-untuk-peningkatan-keterampilan-it-dan-peningkatan-jaringan-profesional-bagi-1b0c2d10d65e',
+                    img: 'https://miro.medium.com/v2/resize:fit:1100/format:webp/1*BaUNPRtgdSUfpIqyl8ScFA.png'
+                },
+                {
+                    title: 'Beberapa Alasan Anak Muda Ingin Belajar Coding',
+                    desc: 'Mengapa coding menjadi skill krusial bagi generasi muda saat ini.',
+                    url: 'https://medium.com/@janzenfaidiban/beberapa-alasan-anak-muda-ingin-belajar-coding-ba90c507196e',
+                    img: 'https://miro.medium.com/v2/resize:fit:2000/format:webp/1*d2oLbENSzoIC5Xu5TxPK9g.jpeg'
+                }
+            ]
+        }">
         
-
-        
-
-        <!-- Start Article Area -->
-        <div id="my-articles" class="rn-portfolio-area portfolio-style-three rn-section-gap section-separator">
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-12">
-                        <div data-aos="fade-up" data-aos-duration="500" data-aos-delay="100" data-aos-once="true" class="section-title text-center">
-                            <span class="subtitle">I'm currently learning to write articles</span>
-                            <h2 class="title">My Articles</h2>
-                        </div>
-                    </div>
-                </div>
-                <div class="row mt--25 mt_md--5 mt_sm--5">
-                    <div class="col-lg-12">
-                        <div data-aos="fade-up" data-aos-duration="500" data-aos-delay="200" data-aos-once="true" class="portfolio-wrapper portfolio-slick-activation slick-arrow-style-one rn-slick-dot-style">
-
-                            <!-- Start Article Item  -->
-                            <div class="rn-portfolio-slick">
-                                <div class="rn-portfolio" data-bs-toggle="modal" data-bs-target="#exampleModalCenter">
-                                    <div class="inner">
-                                        <div class="thumbnail">
-                                            <a href="https://medium.com/@janzenfaidiban/mimpi-ke-amerika-dimulai-dari-papua-pengalaman-yseali-cycle-2-2024-part-i-9e7b81501bdb" target="_blank">
-                                                <img src="assets/images/article/janzen-article-5.png" alt="Janzen Faidiban - Mimpi ke Amerika Dimulai dari Papua: Pengalaman YSEALI Cycle 2 2024 — PART I
-">
-                                            </a>
-                                        </div>
-                                        <div class="content">
-                                            <div class="category-info">
-                                                <div class="category-list">
-                                                    <a href="https://medium.com/@janzenfaidiban/mimpi-ke-amerika-dimulai-dari-papua-pengalaman-yseali-cycle-2-2024-part-i-9e7b81501bdb" target="_blank">medium.com</a>
-                                                </div>
-                                            </div>
-                                            <h4 class="title">
-                                                <a href="https://medium.com/@janzenfaidiban/mimpi-ke-amerika-dimulai-dari-papua-pengalaman-yseali-cycle-2-2024-part-i-9e7b81501bdb" target="_blank">
-                                                    Mimpi ke Amerika Dimulai dari Papua: Pengalaman YSEALI Cycle 2 2024 <br> — PART I
-                                                <i class="feather-arrow-up-right"></i>
-                                                </a>
-                                            </h4>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <!-- End Article Item  -->
-
-                            <!-- Start Article Item  -->
-                            <div class="rn-portfolio-slick">
-                                <div class="rn-portfolio" data-bs-toggle="modal" data-bs-target="#exampleModalCenter">
-                                    <div class="inner">
-                                        <div class="thumbnail">
-                                            <a href="https://medium.com/@janzenfaidiban/komunitas-sacode-untuk-peningkatan-keterampilan-it-dan-pengembangan-jaringan-profesional-bagi-1b0c2d10d65e" target="_blank">
-                                                <img src="assets/images/article/janzen-article-4.png" alt="Janzen Faidiban - Komunitas SaCode untuk Peningkatan Keterampilan IT dan Pengembangan Jaringan Profesional bagi Pecinta IT Muda di Papua">
-                                            </a>
-                                        </div>
-                                        <div class="content">
-                                            <div class="category-info">
-                                                <div class="category-list">
-                                                    <a href="https://medium.com/@janzenfaidiban/komunitas-sacode-untuk-peningkatan-keterampilan-it-dan-pengembangan-jaringan-profesional-bagi-1b0c2d10d65e" target="_blank">medium.com</a>
-                                                </div>
-                                            </div>
-                                            <h4 class="title">
-                                                <a href="https://medium.com/@janzenfaidiban/komunitas-sacode-untuk-peningkatan-keterampilan-it-dan-pengembangan-jaringan-profesional-bagi-1b0c2d10d65e" target="_blank">
-                                                    Komunitas SaCode untuk Peningkatan Keterampilan IT dan Pengembangan Jaringan Profesional bagi Pecinta IT Muda di Papua
-                                                <i class="feather-arrow-up-right"></i>
-                                                </a>
-                                            </h4>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <!-- End Article Item  -->
-
-                            <!-- Start Article Item  -->
-                            <div class="rn-portfolio-slick">
-                                <div class="rn-portfolio" data-bs-toggle="modal" data-bs-target="#exampleModalCenter">
-                                    <div class="inner">
-                                        <div class="thumbnail">
-                                            <a href="https://sagufoundation.org/2024/04/15/digital-world-digital-literacy-and-digital-fluency/" target="_blank">
-                                                <img src="assets/images/article/janzen-article-3.png" alt="Janzen Faidiban - Digital World: Digital Literacy and Digital Fluency">
-                                            </a>
-                                        </div>
-                                        <div class="content">
-                                            <div class="category-info">
-                                                <div class="category-list">
-                                                    <a href="https://sagufoundation.org/2024/04/15/digital-world-digital-literacy-and-digital-fluency/" target="_blank">sagufoundation.org</a>
-                                                </div>
-                                            </div>
-                                            <h4 class="title">
-                                                <a href="https://sagufoundation.org/2024/04/15/digital-world-digital-literacy-and-digital-fluency/" target="_blank">
-                                                    Digital World: Digital Literacy and Digital Fluency
-                                                <i class="feather-arrow-up-right"></i>
-                                                </a>
-                                            </h4>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <!-- End Article Item  -->
-                            
-                            <!-- Start Article Item  -->
-                            <div class="rn-portfolio-slick">
-                                <div class="rn-portfolio" data-bs-toggle="modal" data-bs-target="#exampleModalCenter">
-                                    <div class="inner">
-                                        <div class="thumbnail">
-                                            <a href="https://medium.com/@janzenfaidiban/beberapa-alasan-anak-muda-ingin-belajar-coding-ba90c507196e" target="_blank">
-                                                <img src="assets/images/article/janzen-article-1.png" alt="Janzen Faidiban - Beberapa Alasan Anak Muda Ingin Belajar Coding">
-                                            </a>
-                                        </div>
-                                        <div class="content">
-                                            <div class="category-info">
-                                                <div class="category-list">
-                                                    <a href="https://medium.com/@janzenfaidiban" target="_blank">medium.com</a>
-                                                </div>
-                                            </div>
-                                            <h4 class="title">
-                                                <a href="https://medium.com/@janzenfaidiban/beberapa-alasan-anak-muda-ingin-belajar-coding-ba90c507196e" target="_blank">
-                                                    Beberapa Alasan Anak Muda Ingin Belajar Coding
-                                                <i class="feather-arrow-up-right"></i>
-                                                </a>
-                                            </h4>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <!-- End Article Item  -->
-
-                            <!-- Start Article Item  -->
-                            <div class="rn-portfolio-slick">
-                                <div class="rn-portfolio" data-bs-toggle="modal" data-bs-target="#exampleModalCenter">
-                                    <div class="inner">
-                                        <div class="thumbnail">
-                                            <a href="https://sagufoundation.org/2023/07/19/benefits-of-contributing-in-tech-communities/" target="_blank">
-                                                <img src="assets/images/article/janzen-article-2.png" alt="Janzen Faidiban - Benefits of Contributing in Tech Communities">
-                                            </a>
-                                        </div>
-                                        <div class="content">
-                                            <div class="category-info">
-                                                <div class="category-list">
-                                                    <a href="https://sagufoundation.org/2023/07/19/benefits-of-contributing-in-tech-communities/" target="_blank">sagufoundation.org</a>
-                                                </div>
-                                            </div>
-                                            <h4 class="title">
-                                                <a href="https://sagufoundation.org/2023/07/19/benefits-of-contributing-in-tech-communities/" target="_blank">
-                                                    Benefits of Contributing in Tech Communities
-                                                <i class="feather-arrow-up-right"></i>
-                                                </a>
-                                            </h4>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <!-- End Article Item  -->
-
-                        </div>
-                    </div>
-                </div>
-            </div>
+        <div class="text-xs font-mono text-slate-400 flex items-center space-x-2">
+            <span>docs</span>
+            <span>/</span>
+            <span class="text-slate-800 font-semibold">article.log</span>
         </div>
-        <!-- End Article Area -->
 
-
-
-        <!-- Start What I Do area -->
-        <div id="what-i-do" class="rn-experience-area section-separator rn-section-gap">
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-12">
-                        <div data-aos="fade-up" data-aos-duration="500" data-aos-delay="100" data-aos-once="true" class="section-title text-center">
-                            <span class="subtitle">Over 10 years of experience</span>
-                            <h2 class="title">What I Do</h2>
-                        </div>
-                    </div>
-                </div>
-                <div class="row mt--10">
-                    <div class="col-12 mt_experience">
-
-                        <!-- single job -->
-                        <div data-aos="fade-up" data-aos-duration="500" data-aos-delay="100" data-aos-once="true" class="experience-style-two">
-                            <div class="experience-left">
-                                <div class="experience-image">
-                                    <img src="assets/images/experience/nokensoft.png" alt="Personal Portfolio">
-                                </div>
-                                <div class="experience-center">
-                                    <span class="date">2021-Present</span>
-                                    <h4 class="experience-title">
-                                        Nokensoft
-                                    </h4>
-                                    <h6 class="subtitle">
-                                        Chief Executive Officer (CEO) of Nokensoft
-                                    </h6>
-                                    <p class="disc">IT Consultant in Papua, Indonesia.</p>
-                                    
-                                </div>
-                            </div>
-                            <div class="experience-right">
-                                <div class="experience-footer">
-                                    <a class="rn-btn" href="https://nokensoft.com" target="_blank"><span>www.nokensoft.com</span></a>
-                                </div>
-                            </div>
-                        </div>
-                        <!-- single job -->
-
-                        <!-- single job -->
-                        <div data-aos="fade-up" data-aos-duration="500" data-aos-delay="200" data-aos-once="true" class="experience-style-two">
-                            <div class="experience-left">
-                                <div class="experience-image">
-                                    <img src="assets/images/experience/sacode.png" alt="Personal Portfolio">
-                                </div>
-                                <div class="experience-center">
-                                    <span class="date">2018-Present</span>
-                                    <h4 class="experience-title">
-                                        SaCode
-                                    </h4>
-                                    <h6 class="subtitle">
-                                        Founder & Coding Trainer
-                                    </h6>
-                                    <p class="disc">Information Communication and Technology (ICT) Community in Papua.</p>
-                                </div>
-                            </div>
-                            <div class="experience-right">
-                                <div class="experience-footer">
-                                    <a class="rn-btn" href="https://sacode.web.id" target="_blank"><span>www.sacode.web.id</span></a>
-                                </div>
-                            </div>
-                        </div>
-                        <!-- single job -->
-
-                        <!-- single job -->
-                        <div data-aos="fade-up" data-aos-duration="500" data-aos-delay="300" data-aos-once="true" class="experience-style-two">
-                            <div class="experience-left">
-                                <div class="experience-image">
-                                    <img src="assets/images/experience/sagufoundation.png" alt="Personal Portfolio">
-                                </div>
-                                <div class="experience-center">
-                                    <span class="date">2020-Present</span>
-                                    <h4 class="experience-title">
-                                        SAGU Foundation
-                                    </h4>
-                                    <h6 class="subtitle">
-                                        IT Coordinator and Computer Literacy Tutor
-                                    </h6>
-                                    <p class="disc">NGO of Human Resources Development and Research in Papua.</p>
-                                </div>
-                            </div>
-                            <div class="experience-right">
-                                <div class="experience-footer">
-                                    <a class="rn-btn" href="https://sagufoundation.org" target="_blank"><span>www.sagufoundation.org</span></a>
-                                </div>
-                            </div>
-                        </div>
-                        <!-- single job -->
-
-                    </div>
-                </div>
-            </div>
+        <div class="space-y-2">
+            <h2 class="text-2xl font-extrabold tracking-tight text-slate-900 border-l-4 border-slate-900 pl-3">
+                My Articles
+            </h2>
+            <p class="text-xs text-slate-500">Thoughts, tech tutorials, and software engineering notes.</p>
         </div>
-        <!-- End What I Do area -->   
-         
-        
 
-
-
-
-        <!-- Start Resume Area -->
-        <div id="resume" class="rn-resume-area rn-section-gap section-separator">
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-12">
-                        <div data-aos="fade-up" data-aos-duration="500" data-aos-delay="100" data-aos-once="true" class="section-title text-center">
-                            <span class="subtitle">10+ Years of Experience</span>
-                            <h2 class="title">Resume</h2>
-                        </div>
+        <!-- List Container -->
+        <div class="grid grid-cols-1 gap-4">
+            <template x-for="(article, index) in articles.slice(0, displayCount)" :key="index">
+                <a :href="article.url" target="_blank" class="flex flex-col sm:flex-row items-center bg-white rounded-2xl border border-slate-200 overflow-hidden hover:border-slate-400 transition group shadow-xs">
+                    <div class="w-full sm:w-36 aspect-[3/2] shrink-0 overflow-hidden bg-slate-200">
+                        <img :src="article.img" alt="Cover" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
                     </div>
-                </div>
-                <div class="row mt--45">
-                    <div class="col-lg-12">
-                        <ul data-aos="fade-up" data-aos-duration="500" data-aos-delay="100" data-aos-once="true" class="rn-nav-list nav nav-tabs" id="myTabs" role="tablist">
-                            <li class="nav-item">
-                                <a class="nav-link active" id="education-tab" data-bs-toggle="tab" href="#education" role="tab" aria-controls="education" aria-selected="true">Education</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link " id="professional-tab" data-bs-toggle="tab" href="#professional" role="tab" aria-controls="professional" aria-selected="false">Professional Skills</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" id="experience-tab" data-bs-toggle="tab" href="#experience" role="tab" aria-controls="experience"  aria-selected="false">Job Experience</a>
-                            </li>
-                        </ul>
-
-                        <!-- Start Tab Content Wrapper  -->
-                        <div data-aos="fade-up" data-aos-duration="500" data-aos-delay="200" data-aos-once="true" class="rn-nav-content tab-content" id="myTabContents">
-
-                            <!-- Start Single Tab  -->
-                            <div class="tab-pane show active fade single-tab-area" id="education" role="tabpanel" aria-labelledby="education-tab">
-                                <div class="personal-experience-inner mt--40">
-                                    <div class="row">
-                                        <!-- Start Skill List Area  -->
-                                        <div class="col-md-10 mx-auto col-12">
-                                            <div class="content">
-                                                <span class="subtitle">2008 - 2019</span>
-                                                <h4 class="maintitle">Education History</h4>
-                                                <div class="experience-list">
-
-                                                    <!-- Start Single List  -->
-                                                    <div class="resume-single-list">
-                                                        <div class="inner">
-                                                            <div class="heading">
-                                                                <div class="title">
-                                                                    <h4>ELTA (English Language Training Assistant)</h4>
-                                                                    <span>IALF Bali</span>
-                                                                </div>
-                                                                <div class="date-of-time">
-                                                                    <span class="d-block">2019</span>
-                                                                </div>
-                                                            </div>
-                                                            <p class="description">The English Language Training Assistance (ELTA) program, or English Language Training Assistance (ELTA) program, is designed to support Australia Awards Master's degree scholarship applicants who meet the scholarship application criteria but have a level of English language proficiency below the minimum requirement of IELTS 5.0</p>
-                                                        </div>
-                                                    </div>
-                                                    <!-- End Single List  -->
-
-                                                    <!-- Start Single List  -->
-                                                    <div class="resume-single-list">
-                                                        <div class="inner">
-                                                            <div class="heading">
-                                                                <div class="title">
-                                                                    <h4>Bachelor of Computer (S.Kom) </h4>
-                                                                    <span>Jayapura University of Science and Technology</span>
-                                                                </div>
-                                                                <div class="date-of-time">
-                                                                    <span>2011-2016</span>
-                                                                </div>
-                                                            </div>
-                                                            <p class="description">Studied at Jayapura University of Science and Technology majoring in Information Engineering. Graduated in 2016 with the project title Client-Server Based E-Learning System at SMK Negeri 1 Sentani.</p>
-                                                        </div>
-                                                    </div>
-                                                    <!-- End Single List  -->
-
-                                                    <!-- Start Single List  -->
-                                                    <div class="resume-single-list">
-                                                        <div class="inner">
-                                                            <div class="heading">
-                                                                <div class="title">
-                                                                    <h4>Computer & Network Engineering</h4>
-                                                                    <span>SMK Negeri 1 Sentani</span>
-                                                                </div>
-                                                                <div class="date-of-time">
-                                                                    <span>2008-2011</span>
-                                                                </div>
-                                                            </div>
-                                                            <p class="description"> Studied at SMK Negeri 1 Sentani since 2008. 2nd place in the web design competition for competency competition for vocational school students in Jayapura district in 2009. In 2011, he represented Papua Province at the national LKS web design competition in Jakarta. </p>
-                                                        </div>
-                                                    </div>
-                                                    <!-- End Single List  -->
-
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <!-- End Skill List Area  -->
-
-                                        
-                                    </div>
-                                </div>
-                            </div>
-                            <!-- End Single Tab  -->
-
-                            <!-- Start Single Tab  -->
-                            <div class="tab-pane fade " id="professional" role="tabpanel" aria-labelledby="professional-tab">
-                                <div class="personal-experience-inner mt--40">
-                                    <div class="row row--40">
-
-                                        <!-- Start Single Progressbar  -->
-                                        <div class="col-lg-6 col-md-6 col-12">
-                                            <div class="progress-wrapper">
-                                                <div class="content">
-                                                    <span class="subtitle">Features</span>
-                                                    <h4 class="maintitle">Design Skill</h4>
-
-                                                    <!-- Start Single Progress Charts -->
-                                                    <div class="progress-charts">
-                                                        <h6 class="heading heading-h6">Canva</h6>
-                                                        <div class="progress">
-                                                            <div class="progress-bar wow fadeInLeft" data-wow-duration="0.8s" data-wow-delay=".6s" role="progressbar" style="width: 95%" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100"><span
-                                                                    class="percent-label">95%</span></div>
-                                                        </div>
-                                                    </div>
-                                                    <!-- End Single Progress Charts -->
-
-                                                    <!-- Start Single Progress Charts -->
-                                                    <div class="progress-charts">
-                                                        <h6 class="heading heading-h6">Photoshop</h6>
-                                                        <div class="progress">
-                                                            <div class="progress-bar wow fadeInLeft" data-wow-duration="0.7s" data-wow-delay=".5s" role="progressbar" style="width: 80%" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100"><span
-                                                                    class="percent-label">80%</span></div>
-                                                        </div>
-                                                    </div>
-                                                    <!-- End Single Progress Charts -->
-
-                                                    <!-- Start Single Progress Charts -->
-                                                    <div class="progress-charts">
-                                                        <h6 class="heading heading-h6">Whimsical</h6>
-                                                        <div class="progress">
-                                                            <div class="progress-bar wow fadeInLeft" data-wow-duration="0.5s" data-wow-delay=".3s" role="progressbar" style="width: 95%" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100"><span
-                                                                    class="percent-label">95%</span></div>
-                                                        </div>
-                                                    </div>
-                                                    <!-- End Single Progress Charts -->
-
-                                                    <!-- Start Single Progress Charts -->
-                                                    <div class="progress-charts">
-                                                        <h6 class="heading heading-h6">FIGMA</h6>
-                                                        <div class="progress">
-                                                            <div class="progress-bar wow fadeInLeft" data-wow-duration="0.6s" data-wow-delay=".4s" role="progressbar" style="width: 75%" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100"><span
-                                                                    class="percent-label">75%</span></div>
-                                                        </div>
-                                                    </div>
-                                                    <!-- End Single Progress Charts -->
-
-                                                    <!-- Start Single Progress Charts -->
-                                                    <div class="progress-charts">
-                                                        <h6 class="heading heading-h6">Google Slides</h6>
-                                                        <div class="progress">
-                                                            <div class="progress-bar wow fadeInLeft" data-wow-duration="0.9s" data-wow-delay=".7s" role="progressbar" style="width: 95%" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100"><span
-                                                                    class="percent-label">95%</span></div>
-                                                        </div>
-                                                    </div>
-                                                    <!-- End Single Progress Charts -->
-
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <!-- End Single Progressbar  -->
-
-                                        <!-- Start Single Progressbar  -->
-                                        <div class="col-lg-6 col-md-6 col-12 mt_sm--60">
-                                            <div class="progress-wrapper">
-                                                <div class="content">
-                                                    <span class="subtitle">Features</span>
-                                                    <h4 class="maintitle">Development Skill</h4>
-                                                    <!-- Start Single Progress Charts -->
-                                                    <div class="progress-charts">
-                                                        <h6 class="heading heading-h6">Bootstrap</h6>
-                                                        <div class="progress">
-                                                            <div class="progress-bar wow fadeInLeft" data-wow-duration="0.5s" data-wow-delay=".3s" role="progressbar" style="width: 100%" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100"><span
-                                                                    class="percent-label">100%</span></div>
-                                                        </div>
-                                                    </div>
-                                                    <!-- End Single Progress Charts -->
-
-                                                    <!-- Start Single Progress Charts -->
-                                                    <div class="progress-charts">
-                                                        <h6 class="heading heading-h6">Tailwind CSS</h6>
-                                                        <div class="progress">
-                                                            <div class="progress-bar wow fadeInLeft" data-wow-duration="0.6s" data-wow-delay=".4s" role="progressbar" style="width: 85%" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100"><span
-                                                                    class="percent-label">85%</span></div>
-                                                        </div>
-                                                    </div>
-                                                    <!-- End Single Progress Charts -->
-
-                                                    <!-- Start Single Progress Charts -->
-                                                    <div class="progress-charts">
-                                                        <h6 class="heading heading-h6">JAVASCRIPT</h6>
-                                                        <div class="progress">
-                                                            <div class="progress-bar wow fadeInLeft" data-wow-duration="0.7s" data-wow-delay=".5s" role="progressbar" style="width: 75%" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100"><span
-                                                                    class="percent-label">75%</span></div>
-                                                        </div>
-                                                    </div>
-                                                    <!-- End Single Progress Charts -->
-
-                                                    <!-- Start Single Progress Charts -->
-                                                    <div class="progress-charts">
-                                                        <h6 class="heading heading-h6">Laravel Framework</h6>
-                                                        <div class="progress">
-                                                            <div class="progress-bar wow fadeInLeft" data-wow-duration="0.9s" data-wow-delay=".7s" role="progressbar" style="width: 95%" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100"><span
-                                                                    class="percent-label">95%</span></div>
-                                                        </div>
-                                                    </div>
-                                                    <!-- End Single Progress Charts -->
-
-                                                    <!-- Start Single Progress Charts -->
-                                                    <div class="progress-charts">
-                                                        <h6 class="heading heading-h6">CMS Wordpress</h6>
-                                                        <div class="progress">
-                                                            <div class="progress-bar wow fadeInLeft" data-wow-duration="0.8s" data-wow-delay=".6s" role="progressbar" style="width: 95%" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100"><span
-                                                                    class="percent-label">95%</span></div>
-                                                        </div>
-                                                    </div>
-                                                    <!-- End Single Progress Charts -->
-
-                                                    <!-- Start Single Progress Charts -->
-                                                    <div class="progress-charts">
-                                                        <h6 class="heading heading-h6">LMS Moodle</h6>
-                                                        <div class="progress">
-                                                            <div class="progress-bar wow fadeInLeft" data-wow-duration="0.9s" data-wow-delay=".7s" role="progressbar" style="width: 95%" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100"><span
-                                                                    class="percent-label">95%</span></div>
-                                                        </div>
-                                                    </div>
-                                                    <!-- End Single Progress Charts -->
-
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <!-- End Single Progressbar  -->
-
-                                    </div>
-                                </div>
-                            </div>
-                            <!-- End Single Tab  -->
-
-                            <!-- Start Single Tab  -->
-                            <div class="tab-pane fade" id="experience" role="tabpanel" aria-labelledby="experience-tab">
-                                <div class="personal-experience-inner mt--40">
-                                    <div class="row">
-                                        <!-- Start Skill List Area 2nd  -->
-                                        <div class="col-md-10 mx-auto col-12 mt_md--60 mt_sm--60">
-                                            <div class="content">
-                                                <span class="subtitle">2016 - Present</span>
-                                                <h4 class="maintitle">Job Experience</h4>
-                                                <div class="experience-list">
-
-                                                    <!-- Start Single List  -->
-                                                    <div class="resume-single-list">
-                                                        <div class="inner">
-                                                            <div class="heading">
-                                                                <div class="title">
-                                                                    <h4>CEO of Nokensoft</h4>
-                                                                    <span>PT. Noken Inovasi Teknologi Jayapura</span>
-                                                                </div>
-                                                                <div class="date-of-time">
-                                                                    <span>2021-Present</span>
-                                                                </div>
-                                                            </div>
-                                                            <p class="description">Nokensoft is an IT Consulting Company based in Papua. Providing IT Consulting, Web Development, Information Systems, Network Support, and Digital Publications.</p>
-
-                                                            <a href="https://nokensoft.com" target="_blank" class="text-primary">
-                                                                www.nokensoft.com <i class="feather-arrow-up-right"></i>
-                                                            </a>
-                                                        </div>
-                                                    </div>
-                                                    <!-- End Single List  -->
-
-                                                    <!-- Start Single List  -->
-                                                    <div class="resume-single-list">
-                                                        <div class="inner">
-                                                            <div class="heading">
-                                                                <div class="title">
-                                                                    <h4>Founder & Coding Trainer at SaCode</h4>
-                                                                    <span>Information Communication and Technology (ICT) Community in Papua.</span>
-                                                                </div>
-                                                                <div class="date-of-time">
-                                                                    <span>2018-Present</span>
-                                                                </div>
-                                                            </div>
-                                                            <p class="description">SaCode is an information and communication technology community in Papua. SaCode provides basic coding courses as well as digital literacy sharing activities</p>
-
-                                                            <a href="https://sacode.web.id" target="_blank" class="text-primary">
-                                                                www.sacode.web.id <i class="feather-arrow-up-right"></i>
-                                                            </a>
-                                                        </div>
-                                                    </div>
-                                                    <!-- End Single List  -->
-
-                                                    <!-- Start Single List  -->
-                                                    <div class="resume-single-list">
-                                                        <div class="inner">
-                                                            <div class="heading">
-                                                                <div class="title">
-                                                                    <h4>IT Coordinator & Computer Literacy Tutor at SAGU Foundation</h4>
-                                                                    <span>NGO of Human Resources Development and Research in Papua </span>
-                                                                </div>
-                                                                <div class="date-of-time">
-                                                                    <span>2020-Present</span>
-                                                                </div>
-                                                            </div>
-                                                            <p class="description">SAGU Foundation is an NGO based in Jayapura, Papua. Established on January 17, 2015. The focus of the services is Human Resource Development and Research in Papua.</p>
-
-                                                            <a href="https://sagufoundation.org" target="_blank" class="text-primary">
-                                                                www.sagufoundation.org <i class="feather-arrow-up-right"></i>
-                                                            </a>
-                                                        </div>
-                                                    </div>
-                                                    <!-- End Single List  -->
-
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <!-- End Skill List Area  -->
-                                    </div>
-                                </div>
-                            </div>
-                            <!-- End Single Tab  -->
-                        </div>
+                    <div class="p-4 sm:p-5 flex-1 w-full">
+                        <h4 class="font-bold text-slate-900 text-sm mb-1.5 group-hover:text-blue-600 line-clamp-2" x-text="article.title"></h4>
+                        <p class="text-xs text-slate-500 line-clamp-2" x-text="article.desc"></p>
                     </div>
-                </div>
-            </div>
+                </a>
+            </template>
         </div>
-        <!-- End Resume Area -->
+
+        <!-- Load More Button -->
+        <div class="text-center pt-2" x-show="displayCount < articles.length">
+            <button @click="displayCount += 3" class="px-4 py-2 bg-white text-slate-700 text-xs font-mono font-semibold rounded-xl border border-slate-200 hover:border-slate-400 hover:bg-slate-50 transition shadow-xs">
+                Load More Articles <i class="fa-solid fa-arrow-down ml-1 text-[10px]"></i>
+            </button>
+        </div>
+    </section>
+
+
+
+
+
+        <!-- TAB: CONTACT -->
+        <section x-show="activeTab === 'contact'" x-transition.opacity.duration.200ms id="contact" class="space-y-6" style="display: none;">
+            <div class="text-xs font-mono text-slate-400 flex items-center space-x-2">
+                <span>docs</span>
+                <span>/</span>
+                <span class="text-slate-800 font-semibold">contact.yaml</span>
+            </div>
+
+            <div class="space-y-2">
+                <h2 class="text-2xl font-extrabold tracking-tight text-slate-900 border-l-4 border-slate-900 pl-3">
+                    Get in Touch
+                </h2>
+                <p class="text-xs text-slate-500">Let's discuss IT projects, consultation, or collaboration.</p>
+            </div>
+
+            <div class="p-6 rounded-2xl bg-emerald-50 border border-emerald-200 text-center space-y-4 max-w-md mx-auto">
+                <div class="w-12 h-12 bg-emerald-500 text-white rounded-full flex items-center justify-center mx-auto text-xl shadow-md shadow-emerald-500/20">
+                    <i class="fa-brands fa-whatsapp"></i>
+                </div>
+                <div>
+                    <h3 class="font-bold text-slate-900 text-sm">WhatsApp Direct Chat</h3>
+                    <p class="text-xs text-slate-600 mt-0.5">Fast response for consultation and inquiries. Text first, pelase.</p>
+                </div>
+                <a href="https://wa.me/6282199558191" target="_blank" class="inline-flex items-center justify-center space-x-2 w-full py-2.5 px-4 bg-emerald-600 hover:bg-emerald-700 text-white font-bold text-xs rounded-xl shadow-sm transition">
+                    <i class="fa-brands fa-whatsapp text-sm"></i>
+                    <span>Chat via WhatsApp</span>
+                </a>
+            </div>
+        </section>
 
     </main>
 
-    <!-- Rn footer area Start -->
-    <div id="footer" class="rn-footer-area footer-style-2 rn-section-gapTop section-separator">
-        <div class="container pb--80 pb_sm--40 plr_sm--20">
-            <div class="row">
-                <div class="col-xl-3 col-12 col-lg-3 col-md-6 col-sm-6 col-12">
-                    <div class="logo-thumbnail">
-                        <a href="#"><img src="assets/images/logo/logo-janzen.png" alt="logo-image"></a>
-                    </div>
-                    <div class="social-icone-wrapper">
-                        <ul class="social-share d-flex liststyle">
-                            <li class="github"><a href="https://github.com/janzenfaidiban" target="_blank">
-                                <i data-feather="github"></i></a>
-                            <li class="linkedin"><a href="https://linkedin.com/in/janzen-faidiban-48ba28169/" target="_blank"><i data-feather="linkedin"></i></a>
-                            </li>
-                            <li class="instagram"><a href="https://instagram.com/janzen.faidiban/" target="_blank">
-                                <i data-feather="instagram"></i></a>
-                            </li>
-                            <li class="youtube"><a href="https://www.youtube.com/@janzenfaidiban/videos" target="_blank">
-                                <i data-feather="youtube"></i></a>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="col-sl-9 col-12 mt_sm--20 col-lg-9 col-md-6 col-sm-6 col-12">
-                    <div class="menu-wrapper">
-                        <div class="menu-title">
-                            <h6>Here, I am trying to tell you about me from my point of view</h6>
-                        </div>
-                        <div>
-                            I'm Janzen, the oldest son, and I'm really passionate about computers. I'm deeply committed to helping young people grow and succeed, which is something I find very fulfilling. With a strong focus on both learning and being kind, I aim to be a helpful presence in the world of computers and youth empowerment.
-                            <small class="d-block fs-5 mt-3">_ This writing is powered by Chat GPT 😁 🙏</small>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="copyright text-center ptb--40 section-separator">
-            <p class="description">© 2023. All rights reserved.</p>
-        </div>
-    </div>
+    <!-- Footer Section -->
+    <footer class="max-w-3xl mx-auto px-6 py-6 border-t border-slate-200 text-center text-xs text-slate-400">
+        <p>&copy; 2026 Janzen Faidiban. You can copy and modify.</p>
+    </footer>
 
+    <!-- MOBILE FIXED BOTTOM NAVIGATION BAR -->
+    <nav class="md:hidden fixed bottom-0 left-0 right-0 bg-white/95 backdrop-blur-md border-t border-slate-200 px-4 py-2 flex items-center justify-around z-50 shadow-lg">
+        <button @click="activeTab = 'about'" :class="activeTab === 'about' ? 'text-slate-900 bg-slate-100 font-bold' : 'text-slate-400 font-medium'" class="flex flex-col items-center justify-center w-16 py-1.5 rounded-xl transition">
+            <i class="fa-solid fa-user text-sm mb-1"></i>
+            <span class="text-[10px]">Hello</span>
+        </button>
+        <button @click="activeTab = 'projects'" :class="activeTab === 'projects' ? 'text-slate-900 bg-slate-100 font-bold' : 'text-slate-400 font-medium'" class="flex flex-col items-center justify-center w-16 py-1.5 rounded-xl transition">
+            <i class="fa-solid fa-code text-sm mb-1"></i>
+            <span class="text-[10px]">Projects</span>
+        </button>
+        <button @click="activeTab = 'articles'" :class="activeTab === 'articles' ? 'text-slate-900 bg-slate-100 font-bold' : 'text-slate-400 font-medium'" class="flex flex-col items-center justify-center w-16 py-1.5 rounded-xl transition">
+            <i class="fa-solid fa-newspaper text-sm mb-1"></i>
+            <span class="text-[10px]">My Articles</span>
+        </button>
+        <button @click="activeTab = 'contact'" :class="activeTab === 'contact' ? 'text-slate-900 bg-slate-100 font-bold' : 'text-slate-400 font-medium'" class="flex flex-col items-center justify-center w-16 py-1.5 rounded-xl transition">
+            <i class="fa-brands fa-whatsapp text-sm mb-1"></i>
+            <span class="text-[10px]">Get in Touch</span>
+        </button>
+    </nav>
 
-    <!-- JS ============================================ -->
-    <script src="assets/js/vendor/jquery.js"></script>
-    <script src="assets/js/vendor/modernizer.min.js"></script>
-    <script src="assets/js/vendor/feather.min.js"></script>
-    <script src="assets/js/vendor/slick.min.js"></script>
-    <script src="assets/js/vendor/bootstrap.js"></script>
-    <script src="assets/js/vendor/text-type.js"></script>
-    <script src="assets/js/vendor/wow.js"></script>
-    <script src="assets/js/vendor/aos.js"></script>
-    <script src="assets/js/vendor/particles.js"></script>
-    <script src="assets/js/vendor/jquery-one-page-nav.js"></script>
-    <!-- main JS -->
-    <script src="assets/js/main.js"></script>
 </body>
-
 </html>
